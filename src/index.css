@@ -40,10 +40,3 @@ code {
   font-weight: bold;
   font-style: bold;
 }
-
-@font-face {
-  font-family: 'Rodin Pro';
-  src: url('/public/fonts/FOT-NewRodin Pro M.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
