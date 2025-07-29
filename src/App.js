@@ -1,6 +1,8 @@
 import './App.css';
 import {channelData} from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
+import { RiFileInfoFill } from "react-icons/ri";
+
 
 
 function App() {
@@ -28,6 +30,11 @@ function App() {
       <div className="app__bottom">
         <div className="app__leftBlock">
           <div className="app__leftPocket"/>
+          <div className="app__leftIcon">
+            <div className="app__info">
+              <RiFileInfoFill />
+            </div>
+          </div>
         </div>
         
         <div className="app__centerBlock">
@@ -35,7 +42,7 @@ function App() {
         </div>
         <div className="app__rightBlock">
           <div className="app__rightPocket"/>
-            <div className="app__mailContainer">
+            <div className="app__rightIcon">
               <div className="app__mail">
                 <GrMail/>
               </div>

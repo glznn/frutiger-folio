@@ -16,27 +16,27 @@ export const channelData = [
         image: '',
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
     {
-
+        image: '/images/tv-static.gif'
     },
 ]
