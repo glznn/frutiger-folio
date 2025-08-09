@@ -224,9 +224,40 @@
 }
 
 .contact__me {
-  position:fixed;
+  position: fixed;
+  z-index: 100;
+  width: 50%;
+  height: 90%;
   left: 50%;
   top: 50%;
-  z-index: 100;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+
+  text-align: left;
+  padding-left: 5rem;
   font-size: 10px;
+  color: white;
+}
+
+.contact__me::before {
+  background: rgb(16, 224, 217);
+  content:'';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__me::after {
+  background-image: url("/public/images/circuit-board.jpg");
+  background-size:contain;
+  opacity: 0.30;
+  content:'';
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }

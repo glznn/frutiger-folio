@@ -54,10 +54,10 @@ function App() {
               onClick={handleMailClick}
             >
               <div className="app__mail">
-                {mailClicked && <ContactMe />}
                 <GrMail/>
               </div>
             </div>
+              {mailClicked && <ContactMe />}
         </div>
       </div>
     </div>
@@ -67,26 +67,18 @@ function App() {
 function ContactMe() {
   return (
     <div className="contact__me">
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
-      <h1>TESTING</h1>
+      <br/><br/><br/>
+      <h1>
+        Name: 
+      </h1>
+      <br/><br/><br/>
+      <h1>
+        Email Address:
+      </h1>
+      <br/><br/><br/>
+      <h1>
+        Message:
+      </h1>
     </div>
   )
 }
