@@ -2,10 +2,18 @@ import './App.css';
 import {channelData} from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
+import { useEffect, useState } from 'react'
 
 
 
 function App() {
+
+  const [mailClicked, setMailClicked] = useState(false);
+
+  const handleMailClick = () => {
+    setMailClicked(prev => !prev)
+  }
+
   return (
     <div className="App">
       <div className="app__menu">
@@ -42,8 +50,11 @@ function App() {
         </div>
         <div className="app__rightBlock">
           <div className="app__rightPocket"/>
-            <div className="app__rightIcon">
+            <div className="app__rightIcon"
+              onClick={handleMailClick}
+            >
               <div className="app__mail">
+                {mailClicked && <ContactMe />}
                 <GrMail/>
               </div>
             </div>
@@ -51,6 +62,33 @@ function App() {
       </div>
     </div>
   );
+}
+
+function ContactMe() {
+  return (
+    <div className="contact__me">
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+      <h1>TESTING</h1>
+    </div>
+  )
 }
 
 export default App;
