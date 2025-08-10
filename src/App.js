@@ -66,19 +66,17 @@ function App() {
 
 function ContactMe() {
   return (
-    <div className="contact__me">
-      <br/><br/><br/>
-      <h1>
-        Name: <div className="contact__name"/>
-      </h1>
-      <br/>
-      <h1>
-        Email Address:
-      </h1>
-      <br/><br/><br/>
-      <h1>
-        Message:
-      </h1>
+    <div className="contact__background">
+      <div className="contact__me">
+        <br/><br/><br/>
+          <div className="contact__form"> <h1> ‎ ‎ Name: </h1> </div>
+        <br/><br/><br/>
+          <div className="contact__form"> <h1> ‎ ‎ Email Address: </h1> </div>
+        <br/><br/><br/>
+          <div className="contact__message">
+              <h1> ‎ ‎ ‎Message: </h1> 
+          </div>
+      </div>
     </div>
   )
 }

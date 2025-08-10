@@ -63,7 +63,7 @@
 
 .App h1 { 
   font-family: 'two-weekend-bold';
-  z-index: 2;
+  z-index: 0;
   position: relative;
 }
 
@@ -223,6 +223,33 @@
   font-size: 80px;
 }
 
+.contact__background {
+  display:flex;
+  position: fixed;
+  /* z-index: 100; */
+  background: rgba(0, 0, 0, 0.626);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact__me::before {
+  background-image: url("/public/images/analog-background.jpg");
+  background-size: cover;
+  position: absolute;
+  content:'';
+  opacity: 0.25;
+
+  left: 0px;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50px;
+}
+
 .contact__me {
   position: fixed;
   z-index: 100;
@@ -233,43 +260,48 @@
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
 
+  background-color: black;
+  border-radius: 50px;
   text-align: left;
   padding-left: 5rem;
+  padding-right: 5rem;
   font-size: 10px;
-  color: white;
+  color: gray;
+  
+  border: 4px solid rgb(113, 191, 240);
+  outline: 4px solid white;
+  outline-offset: 0px;
 }
 
-.contact__me::before {
-  background: rgb(114, 234, 92);
-  content:'';
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.contact__me::after {
-  background-image: url("/public/images/circuit-board.jpg");
-  background-size:contain;
-  opacity: 0.30;
-  content:'';
-
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.contact__name {
+.contact__form, .contact__message {
   display: inline-flex;
   position: relative;
   background: rgba(255, 255, 255, 0.801);
-
-  left: 2rem;
-  top: 0.5rem;
-  width: 500px;
-  height: 30px;
+  
+  left: 0rem;
+  top: -0.75rem;
+  width: 750px;
+  height: 50px;
   border-radius: 20px;
+  
+  border: rgb(113, 191, 240) 4px solid;
+}
+
+.contact__form::before, .contact__message::before {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: '';
+
+
+  border: solid 3px white;
+  border-radius: 20px;
+}
+
+.contact__message {
+  background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
+  height: 400px;
 }
