@@ -240,7 +240,7 @@
 }
 
 .contact__me::before {
-  background: rgb(16, 224, 217);
+  background: rgb(114, 234, 92);
   content:'';
   position: fixed;
   left: 0;
@@ -260,4 +260,16 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.contact__name {
+  display: inline-flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.801);
+
+  left: 2rem;
+  top: 0.5rem;
+  width: 500px;
+  height: 30px;
+  border-radius: 20px;
 }

@@ -69,9 +69,9 @@ function ContactMe() {
     <div className="contact__me">
       <br/><br/><br/>
       <h1>
-        Name: 
+        Name: <div className="contact__name"/>
       </h1>
-      <br/><br/><br/>
+      <br/>
       <h1>
         Email Address:
       </h1>
