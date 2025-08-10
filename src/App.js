@@ -67,6 +67,9 @@ function App() {
 function ContactMe() {
   return (
     <div className="contact__background">
+      <div className="contact__exit">
+        <h1>X</h1>
+      </div>
       <div className="contact__me">
         <br/><br/><br/>
           <div className="contact__form"> <h1> ‎ ‎ Name: </h1> </div>

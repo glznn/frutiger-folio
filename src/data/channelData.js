@@ -8,18 +8,20 @@ export const channelData = [
         image: '/images/exedra-preview.png'
     },
     {
-        name: "Credits",
-        image:'',
-    },
-    {
-        name:"Placeholder",
+        name:"Your Name Here!",
         image: '',
     },
     {
-        image: '/images/tv-static.gif'
+        name:"Credits",
+        image: '',
     },
     {
-        image: '/images/tv-static.gif'
+        name:"Contact",
+        image:'',
+    },
+    {
+        name:"Game",
+        image: '',
     },
     {
         image: '/images/tv-static.gif'

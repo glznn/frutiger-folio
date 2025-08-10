@@ -273,6 +273,23 @@
   outline-offset: 0px;
 }
 
+.contact__exit {
+  position: fixed;
+  right: 10vw;
+  top: 2vh;
+  background: radial-gradient(white, lightgray, gray);
+  width: 68px;
+  height: 68px;
+  padding: 2px;
+  border-radius: 10000px;
+  color: gray;
+  outline: 2px solid rgb(255, 255, 255);
+}
+
+.contact__exit:hover {
+  cursor: pointer;
+}
+
 .contact__form, .contact__message {
   display: inline-flex;
   position: relative;
@@ -285,6 +302,11 @@
   border-radius: 20px;
   
   border: rgb(113, 191, 240) 4px solid;
+}
+
+.contact__form h1 {
+  position: relative;
+  top: 2px;
 }
 
 .contact__form::before, .contact__message::before {
@@ -304,4 +326,16 @@
 .contact__message {
   background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
   height: 400px;
+}
+
+.contact__form::after {
+  content:'';
+  position: absolute;
+  z-index: 0;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 50%;
+  border-radius: 10px;
+  background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,0.2));
 }
