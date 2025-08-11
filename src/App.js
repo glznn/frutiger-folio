@@ -2,6 +2,7 @@ import './App.css';
 import {channelData} from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
+import { LuSquareX } from "react-icons/lu";
 import { useEffect, useState } from 'react'
 
 
@@ -9,9 +10,14 @@ import { useEffect, useState } from 'react'
 function App() {
 
   const [mailClicked, setMailClicked] = useState(false);
+  const [infoClicked, setInfoClicked] = useState(false);
 
   const handleMailClick = () => {
-    setMailClicked(prev => !prev)
+    setMailClicked(prev => !prev);
+  }
+
+  const handleInfoClicked = () => {
+    setInfoClicked(prev => !prev);
   }
 
   return (
@@ -38,11 +44,14 @@ function App() {
       <div className="app__bottom">
         <div className="app__leftBlock">
           <div className="app__leftPocket"/>
-          <div className="app__leftIcon">
+          <div className="app__leftIcon"
+            onClick={handleInfoClicked}
+          >
             <div className="app__info">
               <RiFileInfoFill />
             </div>
           </div>
+          {infoClicked && <FolioInfo onClose={handleInfoClicked} />}
         </div>
         
         <div className="app__centerBlock">
@@ -57,28 +66,40 @@ function App() {
                 <GrMail/>
               </div>
             </div>
-              {mailClicked && <ContactMe />}
+            {mailClicked && <ContactMe onClose={handleMailClick} />}
         </div>
       </div>
     </div>
   );
 }
 
-function ContactMe() {
+function ContactMe({ onClose }) {
   return (
     <div className="contact__background">
-      <div className="contact__exit">
-        <h1>X</h1>
+      <div className="contact__exit" 
+      onClick={onClose}>
+        <h1 className="contact__exitIcon"> <LuSquareX /> </h1>
       </div>
       <div className="contact__me">
         <br/><br/><br/>
-          <div className="contact__form"> <h1> ‎ ‎ Name: </h1> </div>
+          <div className="contact__form"> <h1> ‎ ‎ Name: </h1> <input></input></div>
         <br/><br/><br/>
           <div className="contact__form"> <h1> ‎ ‎ Email Address: </h1> </div>
         <br/><br/><br/>
           <div className="contact__message">
               <h1> ‎ ‎ ‎Message: </h1> 
           </div>
+      </div>
+    </div>
+  )
+}
+
+function FolioInfo({ onClose }) {
+  return (
+    <div className="contact__background">
+      <div className="info__exit" 
+      onClick={onClose}>
+        <h1 className="contact__exitIcon"> <LuSquareX /> </h1>
       </div>
     </div>
   )

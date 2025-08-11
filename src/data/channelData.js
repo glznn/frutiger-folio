@@ -1,5 +1,9 @@
 export const channelData = [
     {
+        name:"Contact",
+        image: '',
+    },
+    {
         name:"Bis Blue",
         image: '/images/bis-blue-preview.png'
     },
@@ -14,10 +18,6 @@ export const channelData = [
     {
         name:"Credits",
         image: '',
-    },
-    {
-        name:"Contact",
-        image:'',
     },
     {
         name:"Game",
