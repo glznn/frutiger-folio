@@ -315,7 +315,7 @@
   left: 0rem;
   top: -0.75rem;
   width: 48vw;
-  height: 50px;
+  height: 6vh;
   border-radius: 20px;
   
   border: rgb(113, 191, 240) 4px solid;
@@ -323,7 +323,16 @@
 
 .contact__form h1 {
   position: relative;
-  top: 2px;
+  z-index: 2;
+  top: 10px;
+
+  padding-left: 1rem;
+  font-size: min(1.5vw, 15px);
+  width: fit-content;
+}
+
+#message {
+  padding-top: 0.5rem;
 }
 
 .contact__form::before, .contact__message::before {
@@ -340,11 +349,6 @@
   border-radius: 20px;
 }
 
-.contact__message {
-  background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
-  height: 55vh;
-}
-
 .contact__form::after {
   content:'';
   position: absolute;
@@ -355,4 +359,60 @@
   height: 50%;
   border-radius: 10px;
   background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,0.2));
+}
+
+.contact__field {
+  position: absolute;
+  height:inherit;
+  z-index: 3;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  font-family: 'two-weekend-bolder';
+  font-size: min(1.5vw, 15px);
+  color: rgba(0, 0, 0, 0.677);
+}
+
+#name {
+  width: 35vw;
+  padding-left: calc(5vw + 20px + 1rem);
+}
+
+#email {
+  width: 25vw;
+  padding-left: calc(10vw + 10px + 2.75rem);
+}
+
+.contact__message {
+  background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
+  height: 55vh;
+}
+
+.contact__message h1 {
+  font-size: min(1.5vw, 15px);
+  padding-left: 1rem;
+}
+
+.contact__messageField {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 7vh;
+  padding: 1rem;
+  width: 42vw;
+  height: 25vh;
+
+  border: 3px solid rgba(0, 0, 0, 0.338);
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+
+  background: transparent;
+  font-family: 'two-weekend';
+  font-size: min(1.5vw, 15px);
+  color: gray;
+  text-shadow: 0.5px 1px black;
+  
 }

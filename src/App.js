@@ -82,12 +82,19 @@ function ContactMe({ onClose }) {
       </div>
       <div className="contact__me">
         <br/><br/><br/>
-          <div className="contact__form"> <h1> ‎ ‎ Name: </h1> <input></input></div>
+          <div className="contact__form"> 
+            <h1> ‎ ‎ Name: </h1> 
+            <input type="text" className="contact__field" id="name" placeholder="" required/> 
+          </div>
         <br/><br/><br/>
-          <div className="contact__form"> <h1> ‎ ‎ Email Address: </h1> </div>
+          <div className="contact__form"> 
+            <h1> ‎ ‎ Email Address: </h1> 
+            <input type="text" className="contact__field" id="email" placeholder="" required/> 
+          </div>
         <br/><br/><br/>
           <div className="contact__message">
-              <h1> ‎ ‎ ‎Message: </h1> 
+              <h1 id="message"> ‎ ‎ ‎Message: </h1>
+              <textarea type="text" className="contact__messageField" placeholder="" required/>     
           </div>
       </div>
     </div>
