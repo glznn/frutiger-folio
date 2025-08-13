@@ -97,7 +97,11 @@ function ContactMe({ onClose }) {
               <textarea type="text" className="contact__messageField" placeholder="" required/>     
           </div>
           <div className="contact__bottom">
-            <button className="contact__submit"> Submit </button>
+            <button className="contact__submit"
+
+            > 
+              Submit 
+            </button>
           </div>
       </div>
     </div>
