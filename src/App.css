@@ -85,7 +85,7 @@
   text-shadow: 0px -1px #333;
 }
 
-.app__button:after {
+.app__button:before {
   content:'';
   position: absolute;
   top: 2px;
@@ -226,7 +226,7 @@
 .contact__background {
   display:flex;
   position: fixed;
-  /* z-index: 100; */
+  z-index: 100;
   background: rgba(0, 0, 0, 0.626);
   left: 0;
   top: 0;
@@ -275,7 +275,8 @@
 
 .contact__exit {
   position: fixed;
-  right: 10vw;
+  z-index: 101;
+  right: 5vw;
   top: 2vh;
   background: radial-gradient(white, lightgray, gray);
   width: 68px;
@@ -324,7 +325,7 @@
 .contact__form h1 {
   position: relative;
   z-index: 2;
-  top: 10px;
+  align-self: center;
 
   padding-left: 1rem;
   font-size: min(1.5vw, 15px);
@@ -373,6 +374,7 @@
   font-family: 'two-weekend-bolder';
   font-size: min(1.5vw, 15px);
   color: rgba(0, 0, 0, 0.677);
+  align-self: center;
 }
 
 #name {
@@ -382,12 +384,12 @@
 
 #email {
   width: 25vw;
-  padding-left: calc(10vw + 10px + 2.75rem);
+  padding-left: min(calc(7vw + 6.5rem), 20vw);
 }
 
 .contact__message {
   background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
-  height: 55vh;
+  height: 42vh;
 }
 
 .contact__message h1 {
@@ -398,14 +400,13 @@
 .contact__messageField {
   position:absolute;
   left: 50%;
-  transform: translateX(-50%);
-  margin-top: 7vh;
-  padding: 1rem;
+  transform: translateX(-50%);  
+  padding-top: 7vh;
   width: 42vw;
-  height: 25vh;
+  height: 30vh;
 
-  border: 3px solid rgba(0, 0, 0, 0.338);
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
   outline: none;
   resize: none;
 
@@ -414,5 +415,50 @@
   font-size: min(1.5vw, 15px);
   color: gray;
   text-shadow: 0.5px 1px black;
-  
 }
+
+.contact__bottom {
+  position: absolute;
+  padding-top: 2rem;
+
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+.contact__submit {
+  width: 350px;
+  height: 60px;
+  padding-top: 4px;
+
+  position:relative;
+  z-index: 1;
+
+  outline: 2px solid rgb(50, 50, 50);
+  border: rgb(33, 34, 38) solid 1px;
+  border-radius: 30px;  
+
+  background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
+
+  
+  font-family: 'two-weekend-bold';
+  font-size: 25px;
+  color:rgb(73, 73, 73);
+}
+
+.contact__submit:after {
+  content:'';
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  height: 45%;
+  width: calc(100% - 150px);  
+  border-radius: 10px;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+
+
+.contact__submit:hover {
+  cursor: pointer;
+}
+

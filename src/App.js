@@ -84,17 +84,20 @@ function ContactMe({ onClose }) {
         <br/><br/><br/>
           <div className="contact__form"> 
             <h1> ‎ ‎ Name: </h1> 
-            <input type="text" className="contact__field" id="name" placeholder="" required/> 
+            <input type="text" className="contact__field" id="name" placeholder="" autoComplete='off' required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__form"> 
             <h1> ‎ ‎ Email Address: </h1> 
-            <input type="text" className="contact__field" id="email" placeholder="" required/> 
+            <input type="text" className="contact__field" id="email" placeholder="" autoComplete='off' required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__message">
               <h1 id="message"> ‎ ‎ ‎Message: </h1>
               <textarea type="text" className="contact__messageField" placeholder="" required/>     
+          </div>
+          <div className="contact__bottom">
+            <button className="contact__submit"> Submit </button>
           </div>
       </div>
     </div>
