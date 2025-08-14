@@ -3,7 +3,7 @@ import {channelData} from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
 import { LuSquareX } from "react-icons/lu";
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
@@ -74,31 +74,72 @@ function App() {
 }
 
 function ContactMe({ onClose }) {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "d1dd155a-fc46-414e-aed3-09fe379482cc");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+  
   return (
     <div className="contact__background">
       <div className="contact__exit" 
       onClick={onClose}>
         <h1 className="contact__exitIcon"> <LuSquareX /> </h1>
       </div>
-      <form className="contact__me">
+      <form className="contact__me" onSubmit={onSubmit}>
         <br/><br/><br/> 
           <div className="contact__form"> 
             <h1> ‎ ‎ Name: </h1> 
-            <input type="text" className="contact__field" id="name" placeholder="" autoComplete='off' required/> 
+            <input className="contact__field" 
+            type="text"
+            id="name" 
+            name="name"
+            placeholder="" 
+            autoComplete='off' 
+            required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__form"> 
             <h1> ‎ ‎ Email Address: </h1>
-            <input type="email" className="contact__field" id="address" placeholder="" autoComplete='dont-fill-me-pls' required/> 
+            <input className="contact__fieldMail" 
+            type="email"
+            name="email"
+            placeholder="" 
+            autoComplete='dont-fill-me-pls' 
+            required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__message">
               <h1 id="message"> ‎ ‎ ‎Message: </h1>
-              <textarea type="text" className="contact__messageField" placeholder="" required/>     
+              <textarea className="contact__messageField" 
+              type="text" 
+              name="message"
+              placeholder="" 
+              required/>
           </div>
           <div className="contact__bottom">
             <button className="contact__submit"
-
+            type="submit"
             > 
               Submit 
             </button>

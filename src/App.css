@@ -362,7 +362,7 @@
   background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,0.2));
 }
 
-.contact__field {
+.contact__field, .contact__fieldMail {
   position: absolute;
   height:inherit;
   z-index: 3;
@@ -382,14 +382,14 @@
   padding-left: calc(5vw + 20px + 1rem);
 }
 
-#address {
+.contact__fieldMail {
   width: 25vw;
   padding-left: min(calc(7vw + 6.5rem), 20vw);
 }
 
 .contact__message {
   background: linear-gradient(rgb(255, 255, 255), rgba(128, 128, 128, 0.914));
-  height: 42vh;
+  height: 48vh;
 }
 
 .contact__message h1 {
@@ -419,7 +419,7 @@
 
 .contact__bottom {
   position: absolute;
-  padding-top: 2rem;
+  padding-top: 1rem;
 
   left: 50%;
   transform:translateX(-50%);
