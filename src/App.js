@@ -4,8 +4,7 @@ import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
 import { LuSquareX } from "react-icons/lu";
 import React, { useEffect, useState } from 'react'
-
-
+import Swal from 'sweetalert2'
 
 function App() {
 
@@ -92,8 +91,15 @@ function ContactMe({ onClose }) {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
+      Swal.fire({
+        title: "Message sent!",
+        text: "Thank you for your inquiry.",
+        icon: "success",
+        confirmButtonText: "Yeah!",
+        preConfirm: () => {
+          onClose();
+        }
+      });
     } else {
       console.log("Error", data);
       setResult(data.message);

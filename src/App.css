@@ -477,3 +477,30 @@
   outline: 4px solid white;
 }
 
+.swal2-popup {
+  font-family: 'Spectral';
+  background-color: white;
+}
+
+.swal2-title {
+  padding-top: 1rem;
+
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: -2px;
+  color:black;
+  text-shadow: 2px 1px 20px rgb(96, 96, 96);
+}
+
+.swal2-html-container {
+  letter-spacing: -0.5px;
+  text-shadow: 2px 1px 10px rgb(96, 96, 96);
+}
+
+.swal2-confirm {
+  background-color: rgb(113, 191, 240);
+}
+
+.swal2-confirm:hover {
+  background-color: rgb(38, 147, 214);
+}
