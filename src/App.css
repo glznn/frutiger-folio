@@ -382,7 +382,7 @@
   padding-left: calc(5vw + 20px + 1rem);
 }
 
-#email {
+#address {
   width: 25vw;
   padding-left: min(calc(7vw + 6.5rem), 20vw);
 }

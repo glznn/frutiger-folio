@@ -80,16 +80,16 @@ function ContactMe({ onClose }) {
       onClick={onClose}>
         <h1 className="contact__exitIcon"> <LuSquareX /> </h1>
       </div>
-      <div className="contact__me">
-        <br/><br/><br/>
+      <form className="contact__me">
+        <br/><br/><br/> 
           <div className="contact__form"> 
             <h1> ‎ ‎ Name: </h1> 
             <input type="text" className="contact__field" id="name" placeholder="" autoComplete='off' required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__form"> 
-            <h1> ‎ ‎ Email Address: </h1> 
-            <input type="text" className="contact__field" id="email" placeholder="" autoComplete='off' required/> 
+            <h1> ‎ ‎ Email Address: </h1>
+            <input type="email" className="contact__field" id="address" placeholder="" autoComplete='dont-fill-me-pls' required/> 
           </div>
         <br/><br/><br/>
           <div className="contact__message">
@@ -103,7 +103,7 @@ function ContactMe({ onClose }) {
               Submit 
             </button>
           </div>
-      </div>
+      </form>
     </div>
   )
 }
