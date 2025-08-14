@@ -95,7 +95,7 @@ function ContactMe({ onClose }) {
         title: "Message sent!",
         text: "Thank you for your inquiry.",
         icon: "success",
-        confirmButtonText: "Yeah!",
+        confirmButtonText: "Cool!",
         preConfirm: () => {
           onClose();
         }
