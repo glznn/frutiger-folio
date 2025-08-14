@@ -223,6 +223,32 @@
   font-size: 80px;
 }
 
+.info__background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10;
+
+  background-color: black;
+}
+
+.info__exit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.info__exitIcon {
+  color:white;
+}
+
+.info__exitIcon:hover {
+  cursor:pointer;
+}
+
 .contact__background {
   display:flex;
   position: fixed;
