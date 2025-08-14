@@ -9,6 +9,12 @@
   /* border-image: linear-gradient(to right, rgb(215, 255, 113), rgb(0, 255, 119), rgb(255, 0, 230)) 1; */
 }
 
+/*
+* --------------------------------------------------
+* Channel Menu
+* --------------------------------------------------
+*/
+
 .app__menu {
   position: relative;
   display: block; /*fixed*/
@@ -223,6 +229,12 @@
   font-size: 80px;
 }
 
+/*
+* --------------------------------------------------
+* Start / Information (Warning) Screen
+* --------------------------------------------------
+*/
+
 .info__background {
   position: fixed;
   top: 0px;
@@ -248,6 +260,12 @@
 .info__exitIcon:hover {
   cursor:pointer;
 }
+
+/*
+* --------------------------------------------------
+* Contact Form
+* --------------------------------------------------
+*/
 
 .contact__background {
   display:flex;
@@ -484,24 +502,30 @@
   color:rgb(73, 73, 73);
 }
 
-  .contact__submit:after {
-    content:'';
-    position: absolute;
-    z-index: -1;
+.contact__submit:after {
+  content:'';
+  position: absolute;
+  z-index: -1;
 
-    bottom: 8px;
-    right: 20px;
-    height: 45%;
-    width: calc(100% - 80px); 
+  bottom: 8px;
+  right: 20px;
+  height: 45%;
+  width: calc(100% - 80px); 
 
-    border-radius: 10px;
-    background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
-  }
+  border-radius: 10px;
+  background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
+}
 
 .contact__submit:hover {
   cursor: pointer;
   outline: 4px solid white;
 }
+
+/*
+* --------------------------------------------------
+* Sweet Alert 2 Component
+* --------------------------------------------------
+*/
 
 .swal2-popup {
   font-family: 'Spectral';

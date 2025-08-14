@@ -161,6 +161,7 @@ function FolioInfo({ onClose }) {
       <div className="info__exit" 
       onClick={onClose}>
         <h1 className="info__exitIcon"> <LuSquareX /> </h1>
+        <h1> TESTING </h1>
       </div>
     </div>
   )
