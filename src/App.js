@@ -74,37 +74,50 @@ function App() {
 
 function ContactMe({ onClose }) {
 
-  const [result, setResult] = React.useState("");
-
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "d1dd155a-fc46-414e-aed3-09fe379482cc");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      Swal.fire({
-        title: "Message sent!",
-        text: "Thank you for your inquiry.",
-        icon: "success",
-        confirmButtonText: "Cool!",
-        preConfirm: () => {
-          onClose();
+     Swal.fire({
+      title: "Message sent!",
+      text: "Thank you for your inquiry.",
+      icon: "success",
+      confirmButtonText: "Cool!",
+      preConfirm: () => {
+        onClose();
         }
-      });
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
-  };
+    }); 
+  }
+
+  // const [result, setResult] = React.useState("");
+  
+  // const onSubmit = async (event) => {
+  //   event.preventDefault();
+  //   setResult("Sending....");
+  //   const formData = new FormData(event.target);
+
+  //   formData.append("access_key", "9a58a39a-0062-495d-aa79-23c4d35adf73");
+
+  //   const response = await fetch("https://api.web3forms.com/submit", {
+  //     method: "POST",
+  //     body: formData
+  //   });
+
+  //   const data = await response.json();
+  //   /* change */ 
+  //   if (true) {
+  //     Swal.fire({
+  //       title: "Message sent!",
+  //       text: "Thank you for your inquiry.",
+  //       icon: "success",
+  //       confirmButtonText: "Cool!",
+  //       preConfirm: () => {
+  //         onClose();
+  //       }
+  //     });
+  //   } else {
+  //     console.log("Error", data);
+  //     setResult(data.message);
+  //   }
+  // };
   
   return (
     <div className="contact__background">
@@ -158,10 +171,18 @@ function ContactMe({ onClose }) {
 function FolioInfo({ onClose }) {
   return (
     <div className="info__background">
+      <div className="info__message">
+        <h1>
+          THIS IS A PORTFOLIO BY GLENN MONTEPIEDRA.
+          <br/>
+          BROWSE CHANNELS TO EXPLORE
+          <br/>
+          CLICK TO CONTINUE.
+        </h1>
+      </div>
       <div className="info__exit" 
       onClick={onClose}>
         <h1 className="info__exitIcon"> <LuSquareX /> </h1>
-        <h1> TESTING </h1>
       </div>
     </div>
   )
