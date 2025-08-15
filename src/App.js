@@ -6,6 +6,9 @@ import { LuSquareX } from "react-icons/lu";
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Credits from './Credits'
+
 function App() {
 
   const [mailClicked, setMailClicked] = useState(false);
@@ -28,6 +31,9 @@ function App() {
               <li
                 key={key}
                 className="app__channel"
+                onClick={() => {
+                  window.location.pathname = `${channel.path}`
+                }}
               >
                 <img src={channel.image}/>
                 <h1>{channel.name}</h1>
@@ -80,7 +86,7 @@ function ContactMe({ onClose }) {
       title: "Message sent!",
       text: "Thank you for your inquiry.",
       icon: "success",
-      confirmButtonText: "Cool!",
+      confirmButtonText: "Yay!",
       preConfirm: () => {
         onClose();
         }

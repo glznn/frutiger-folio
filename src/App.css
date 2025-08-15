@@ -9,6 +9,12 @@
   /* border-image: linear-gradient(to right, rgb(215, 255, 113), rgb(0, 255, 119), rgb(255, 0, 230)) 1; */
 }
 
+.App h1 { 
+  font-family: 'two-weekend-bold';
+  z-index: 0;
+  position: relative;
+}
+
 /*
 * --------------------------------------------------
 * Channel Menu
@@ -42,11 +48,18 @@
   place-content: center;
   border-radius: 10% / 18%;
   border: solid 3px rgb(166, 166, 166);
-  /* box-shadow:
+  box-shadow:
     inset -4px -4px 8px rgba(0, 0, 0, 0.05),
     inset 4px 4px 8px rgba(255, 255, 255, 0.6),
-    0 4px 8px rgba(0, 0, 0, 0.15); */
+    0 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+
+.app__channel h1 {
+  /* font-family: 'Spectral';
+  font-weight: 300;
+  letter-spacing: -2.8px;
+  transform:skewX(-3deg); */
 }
 
 .app__channel:hover {
@@ -65,12 +78,6 @@
 
 .app__content {
   padding-top: 1rem;
-}
-
-.App h1 { 
-  font-family: 'two-weekend-bold';
-  z-index: 0;
-  position: relative;
 }
 
 .app__button {
@@ -556,6 +563,8 @@
 
 .swal2-confirm {
   background-color: rgb(113, 191, 240);
+  font-family: 'two-weekend';
+  letter-spacing: 0.5px;
 }
 
 .swal2-confirm:hover {
