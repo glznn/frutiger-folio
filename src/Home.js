@@ -176,10 +176,10 @@ function FolioInfo({ onClose }) {
     <div className="info__background">
       <div className="info__message">
         <h1>
-          THIS IS A PORTFOLIO BY GLENN MONTEPIEDRA.
+          PORTFOLIO BY GLENN MONTEPIEDRA.
           <br/>
           BROWSE CHANNELS TO EXPLORE
-          <br/>
+          <br/><br/><br/><br/><br/>
           CLICK TO CONTINUE.
         </h1>
       </div>

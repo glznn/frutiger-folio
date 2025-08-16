@@ -12,7 +12,9 @@
 }
 
 .credits__content {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color:white;
-
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }

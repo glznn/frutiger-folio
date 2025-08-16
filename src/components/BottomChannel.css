@@ -1,0 +1,10 @@
+.BottomChannel {
+    position: absolute;
+    outline: 2px solid red;
+}
+
+.bottomChannel__bar {
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+}

@@ -55,13 +55,6 @@
   overflow: hidden;
 }
 
-.home__channel h1 {
-  /* font-family: 'Spectral';
-  font-weight: 300;
-  letter-spacing: -2.8px;
-  transform:skewX(-3deg); */
-}
-
 .home__channel:hover {
   cursor:pointer;
 }
