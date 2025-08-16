@@ -2,18 +2,18 @@ export const channelData = [
     {
         name:"Contact",
         image: '',
-        path: '/'
+        path: '/contact'
     },
     {
         name:"Bis Blue",
         image: '/images/bis-blue-preview.png',
-        path: '/'
+        path: '/bis-blue'
 
     },
     {
         name: "Exedra",
         image: '/images/exedra-preview.png',
-        path: '/'
+        path: '/exedra'
     },
     {
         name:"Your Name Here!",
@@ -28,7 +28,7 @@ export const channelData = [
     {
         name:"Game",
         image: '',
-        path: '/'
+        path: '/game'
     },
     {
         image: '/images/tv-static.gif'

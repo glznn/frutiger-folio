@@ -1,5 +1,5 @@
 
-.App {
+.Home {
   position: relative;
   text-align: center;
   padding-top: 2rem;
@@ -9,7 +9,7 @@
   /* border-image: linear-gradient(to right, rgb(215, 255, 113), rgb(0, 255, 119), rgb(255, 0, 230)) 1; */
 }
 
-.App h1 { 
+.Home h1 { 
   font-family: 'two-weekend-bold';
   z-index: 0;
   position: relative;
@@ -17,17 +17,17 @@
 
 /*
 * --------------------------------------------------
-* Channel Menu
+* Home
 * --------------------------------------------------
 */
 
-.app__menu {
+.home__menu {
   position: relative;
   display: block; /*fixed*/
   justify-content: center;
 }
 
-.app__channels {
+.home__channels {
   position: relative;
   display: grid;
   width: max-content;
@@ -38,7 +38,7 @@
   margin: 0 auto;
 }
 
-.app__channel {
+.home__channel {
   position: relative;
   background-color: white;
   width: 20vw;
@@ -55,18 +55,18 @@
   overflow: hidden;
 }
 
-.app__channel h1 {
+.home__channel h1 {
   /* font-family: 'Spectral';
   font-weight: 300;
   letter-spacing: -2.8px;
   transform:skewX(-3deg); */
 }
 
-.app__channel:hover {
+.home__channel:hover {
   cursor:pointer;
 }
 
-.app__channel img {
+.home__channel img {
   display: flex;
   position: relative;
   width: 20vw;
@@ -76,11 +76,11 @@
   opacity: 0.8;
 }
 
-.app__content {
+.home__content {
   padding-top: 1rem;
 }
 
-.app__button {
+.home__button {
   position:relative;
   display: inline-block;
   padding: 15px 25px;
@@ -98,7 +98,7 @@
   text-shadow: 0px -1px #333;
 }
 
-.app__button:before {
+.home__button:before {
   content:'';
   position: absolute;
   top: 2px;
@@ -109,11 +109,11 @@
   background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
 }
 
-.app__button:hover {
+.home__button:hover {
   background: linear-gradient(#073,#0fa);
 }
 
-.app__clouds {
+.home__clouds {
   position:absolute;
   left: 0;
   top: 0;
@@ -121,11 +121,11 @@
   opacity: 0.8;
 }
 
-.app__bottom {
+.home__bottom {
   width: 100%;
 }
 
-.app__leftBlock, .app__rightBlock, .app__centerBlock {
+.home__leftBlock, .home__rightBlock, .home__centerBlock {
   position: absolute;
   background:rgb(175, 174, 174);
   bottom: 19%;
@@ -134,10 +134,10 @@
   border-top: 4px solid rgb(113, 191, 240);
 }
 
-/* .app__bottom {
+/* .home__bottom {
 } */
 
-.app__centerBlock {
+.home__centerBlock {
   height: 81px;
   width: 38.7%;
   left: 50%;
@@ -146,7 +146,7 @@
   border-width: 3px;
 }
 
-.app__leftBlock {
+.home__leftBlock {
   left: 0%;
   border-top-right-radius: 200px;
   border-right: 0.08rem solid rgb(173, 171, 171);
@@ -154,7 +154,7 @@
 
 }
 
-.app__rightBlock {
+.home__rightBlock {
   right: 0%;
   border-top-left-radius: 150px;
   border-left: 0.09rem solid rgb(175, 174, 174);
@@ -162,14 +162,14 @@
 
 }
 
-.app__rightPocket, .app__leftPocket {
+.home__rightPocket, .home__leftPocket {
   position: absolute;
   background-image: linear-gradient(rgba(128, 128, 128, 0.50), rgba(255, 255, 255, 0.222), rgba(128, 128, 128, 0.50));
   width: 230px;
   height: 135px;
 }
 
-.app__rightPocket {
+.home__rightPocket {
   box-shadow: inset 20px 10px 20px rgba(255, 255, 255, 0.59);
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -180,7 +180,7 @@
   right: 0%;
 }
 
-.app__leftPocket {
+.home__leftPocket {
   box-shadow: inset -20px 10px 20px rgba(255, 255, 255, 0.59);
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -191,7 +191,7 @@
   left: 0%;
 }
 
-.app__rightIcon, .app__leftIcon {
+.home__rightIcon, .home__leftIcon {
   position: absolute;
   padding: 0.5rem;
   background-image: linear-gradient(to left, rgba(128, 128, 128, 0.588), white);
@@ -206,15 +206,15 @@
   z-index: 1;
 }
 
-.app__rightIcon {
+.home__rightIcon {
   right: 95px;
 }
 
-.app__leftIcon {
+.home__leftIcon {
   left: 95px;
 }
 
-.app__rightIcon:after, .app__leftIcon:after {
+.home__rightIcon:after, .home__leftIcon:after {
   content:'';
   position: absolute;
   z-index: 0;
@@ -226,12 +226,12 @@
   background: linear-gradient(rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.144));
 }
 
-.app__info {
+.home__info {
   color: gray;
   font-size: 80px;
 }
 
-.app__mail {
+.home__mail {
   color: gray;
   font-size: 80px;
 }

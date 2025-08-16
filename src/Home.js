@@ -1,4 +1,4 @@
-import './App.css';
+import './Home.css';
 import {channelData} from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
@@ -6,10 +6,7 @@ import { LuSquareX } from "react-icons/lu";
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Credits from './Credits'
-
-function App() {
+function Home() {
 
   const [mailClicked, setMailClicked] = useState(false);
   const [infoClicked, setInfoClicked] = useState(false);
@@ -23,14 +20,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="app__menu">
-        <ul className="app__channels">
+    <div className="Home">
+      <div className="home__menu">
+        <ul className="home__channels">
           {channelData.map ((channel, key) => {
             return (
               <li
                 key={key}
-                className="app__channel"
+                className="home__channel"
                 onClick={() => {
                   window.location.pathname = `${channel.path}`
                 }}
@@ -42,32 +39,32 @@ function App() {
           })}
         </ul>
       </div>
-      <div className="app__content">
-        <button className="app__button">Don't tap the glass!</button>
+      <div className="home__content">
+        <button className="home__button">Don't tap the glass!</button>
         <h1>Glenn Montepiedra </h1>
       </div>
-      <div className="app__bottom">
-        <div className="app__leftBlock">
-          <div className="app__leftPocket"/>
-          <div className="app__leftIcon"
+      <div className="home__bottom">
+        <div className="home__leftBlock">
+          <div className="home__leftPocket"/>
+          <div className="home__leftIcon"
             onClick={handleInfoClicked}
           >
-            <div className="app__info">
+            <div className="home__info">
               <RiFileInfoFill />
             </div>
           </div>
           {infoClicked && <FolioInfo onClose={handleInfoClicked} />}
         </div>
         
-        <div className="app__centerBlock">
+        <div className="home__centerBlock">
 
         </div>
-        <div className="app__rightBlock">
-          <div className="app__rightPocket"/>
-            <div className="app__rightIcon"
+        <div className="home__rightBlock">
+          <div className="home__rightPocket"/>
+            <div className="home__rightIcon"
               onClick={handleMailClick}
             >
-              <div className="app__mail">
+              <div className="home__mail">
                 <GrMail/>
               </div>
             </div>
@@ -194,4 +191,4 @@ function FolioInfo({ onClose }) {
   )
 }
 
-export default App;
+export default Home;
