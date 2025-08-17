@@ -1,0 +1,59 @@
+.MenuButton:before {
+  content:'';
+  position: absolute;
+  z-index: -1;
+
+  top: 8px;
+  left: 20px;
+  height: 45%;
+  width: calc(100% - 155px);  
+
+  border-radius: 10px;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.MenuButton {
+  position: absolute;
+  z-index: 10;
+  width: 330px;
+  height: 80px;
+  padding-top: 4px;
+
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: rgb(113, 191, 240) solid 3px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px 10px rgb(159, 159, 159);
+
+  background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
+
+  font-family: 'two-weekend-bold';
+  font-size: 25px;
+  letter-spacing: 0px;
+  color:rgb(73, 73, 73);
+
+  transition: 0.2s ease-in-out;
+}
+
+.MenuButton:after {
+  content:'';
+  position: absolute;
+  z-index: -1;
+
+  bottom: 8px;
+  right: 20px;
+  height: 45%;
+  width: calc(100% - 80px); 
+
+  border-radius: 10px;
+  background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
+}
+
+.MenuButton:hover {
+  height: calc(80px * 1.2);
+  width: calc(330px * 1.2);
+
+  cursor: pointer;
+}

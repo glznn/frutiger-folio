@@ -497,9 +497,9 @@
   position:relative;
   z-index: 1;
 
-  outline: 1.8px solid white;
   border: rgb(113, 191, 240) solid 3px;
-  border-radius: 30px;  
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 10px rgba(71, 71, 71, 0.501);
 
   background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
 
@@ -524,7 +524,8 @@
 
 .contact__submit:hover {
   cursor: pointer;
-  outline: 4px solid white;
+  outline: 2.5px solid white;
+  box-shadow: none;
 }
 
 /*

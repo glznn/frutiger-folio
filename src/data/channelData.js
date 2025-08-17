@@ -2,28 +2,33 @@ export const channelData = [
     {
         name:"Contact",
         image: '',
-        path: '/contact'
+        path: '/contact',
+        next:'/bis-blue'
     },
     {
         name:"Bis Blue",
         image: '/images/bis-blue-preview.png',
-        path: '/bis-blue'
+        path: '/bis-blue',
+        next:'/exedra'
 
     },
     {
         name: "Exedra",
         image: '/images/exedra-preview.png',
-        path: '/exedra'
+        path: '/exedra',
+        next:'/'
     },
     {
         name:"Your Name Here!",
         image: '',
-        path: '/'
+        path: '/',
+        next:'/credits'
     },
     {
         name:"Credits",
         image: '',
-        path: '/credits'
+        path: '/credits',
+        next:'/game'
     },
     {
         name:"Game",
