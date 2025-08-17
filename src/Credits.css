@@ -20,4 +20,6 @@
     width: 100%;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
+
+    outline: 8px solid rgb(166, 166, 166);
 }

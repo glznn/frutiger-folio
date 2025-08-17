@@ -34,7 +34,7 @@
   letter-spacing: 0px;
   color:rgb(73, 73, 73);
 
-  transition: 0.2s ease-in-out;
+  transition: width height 0.2s ease-in-out;
 }
 
 .MenuButton:after {
@@ -52,8 +52,13 @@
 }
 
 .MenuButton:hover {
-  height: calc(80px * 1.2);
-  width: calc(330px * 1.2);
+  height: calc(80px * 1.1);
+  width: calc(330px * 1.1);
 
   cursor: pointer;
+}
+
+.MenuButton:hover {
+  box-shadow: 0px 0px 15px 10px rgb(159, 159, 159),
+    inset 0px 0px 25px 2px white;
 }
