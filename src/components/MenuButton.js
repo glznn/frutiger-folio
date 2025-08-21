@@ -1,12 +1,18 @@
 import React from 'react'
 
 import './MenuButton.css'
+import { useNavigate } from 'react-router-dom'
 
 function MenuButton() {
+
+  const navigate = useNavigate();
+
   return (
     <button className="MenuButton"
     onClick={() => {
-        window.location.pathname = '/'
+        document.startViewTransition(() => {
+        navigate("/");
+      });
     }}
     >   Menu    </button>
   )
