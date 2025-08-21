@@ -29,17 +29,18 @@
 
     overflow-y: auto;
     scrollbar-color: black;
+    font-weight: 100;
 }
 
 .credits__content h1 {
     text-align: center;
+    font-weight: 100;
 }
 
 .credits__layout {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: space-around;
 }
 
 .credits__header {

@@ -7,35 +7,52 @@ function Credits() {
     <div className="Credits">  
         <div className="credits__content">
           <div className="credits__header">
-            Credits <br/><br/>
-            Created using React <br/><br/>
+            Credits <br/>
+            Created using React <br/>
           </div>
           <div className="credits__layout">
             <div className="credits__packages">
               <h1>Packages</h1>
-              Sweet Alert <br/>
-              - https://sweetalert2.github.io/#usage <br/>
-              Routing:	<br/>
-              react-router-dom <br/><br/>
+              <a href="https://sweetalert2.github.io/">
+              Sweet Alert </a> 
+              <br/>
+              <a href="https://reactrouter.com/">
+              React Router </a>
+              <br/>
             </div>
             <div className="credits__assets">
               <h1>Assets</h1>
-              Tv-Static gif <br/>
-              Psddude <br/>
-              https://graphicriver.net/user/psddude/portfolio <br/>
-              pixabay <br/>
-              Analog image <br/>
-              https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o <br/>
-              Bernard Hermant <br/>
-              Font (free for Commercial Use)  <br/>
-              Two-weekends-sans by T. X. Zhang <br/>
-              https://fontesk.com/designer/t-x-zhang/ <br/><br/>
+
+              <a href="https://pixabay.com/gifs/noise-frequency-sound-noisy-tv-18561/"> 
+              Tv-Static gif </a>
+              by 
+              <a href="https://www.psd-dude.com/"> 
+              Psddude </a> 
+              <br/>
+
+              <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o">
+              Analog image </a> 
+              by
+              <a href="https://unsplash.com/@bernardhermant">
+              Bernard Hermant </a>
+              <br/>
+
+              <a href="https://fontesk.com/two-weekends-sans-font/">
+              Two Weekends Sans Font </a>
+              by 
+              <a href="https://github.com/AlphaZTX">
+              T. X. Zhang </a>
+              <br/>
             </div>
           </div>
           <div className="credits__design">
             <h1>Design</h1>
-            Design inspired by Ninendo Wii <br/>
-            Not affiliated / associated with Nintendo <br/><br/><br/><br/><br/><br/><br/><br/>
+            Design inspired by 
+            <a href="https://wii.fandom.com/wiki/Wii_Menu">
+            Ninendo Wii Menu </a>
+            <br/>
+            
+            (I am not affiliated with Nintendo!) <br/><br/><br/><br/>
           </div>
         <BottomChannel/>
         </div>
