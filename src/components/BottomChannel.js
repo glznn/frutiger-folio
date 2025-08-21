@@ -7,7 +7,14 @@ function BottomChannel() {
   return (
     <div className="BottomChannel">
         <div className="bottomChannel__bar">
-          <MenuButton />
+          <div className="bottomChannel__buttons">
+            <div className="bottomChannel__menu">
+            <MenuButton text="Menu" />
+            </div>
+            <div className="bottomChannel__viewMore">
+            <MenuButton text="View More" />
+            </div>
+          </div>
         </div>
     </div>
   )

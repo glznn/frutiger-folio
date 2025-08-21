@@ -8,11 +8,13 @@
     text-align: center;
 
     font-family: 'Spectral';
+    overflow: hidden;
 }
 
+
 .credits__content {
-    display: grid;
-    grid-template-columns: auto auto auto ;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
     background-color: rgb(0, 0, 0);
     color:white;
     padding-left: 6rem;
@@ -23,5 +25,37 @@
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
 
-    outline: 8px solid rgb(166, 166, 166);
+    box-shadow: 0 0 0 8px rgb(166, 166, 166);
+
+    overflow-y: auto;
+    scrollbar-color: black;
 }
+
+.credits__content h1 {
+    text-align: center;
+}
+
+.credits__layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.credits__header {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.credits__packages {
+
+}
+
+.credits__assets {
+
+}
+
+.credits__design {
+
+}
+
