@@ -39,10 +39,10 @@ function Home() {
           })}
         </ul>
       </div>
-      <div className="home__content">
+      {/* <div className="home__content">
         <button className="home__button">Don't tap the glass!</button>
         <h1>Glenn Montepiedra </h1>
-      </div>
+      </div> */}
       <div className="home__bottom">
         <div className="home__leftBlock">
           <div className="home__leftPocket"/>

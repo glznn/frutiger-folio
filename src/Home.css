@@ -5,7 +5,7 @@
   padding-top: 2rem;
   padding-bottom: 10rem;
   cursor:grab;
-  border:rgb(52, 120, 255) 3px solid;
+  /* border:rgb(52, 120, 255) 3px solid; */
   /* border-image: linear-gradient(to right, rgb(215, 255, 113), rgb(0, 255, 119), rgb(255, 0, 230)) 1; */
 }
 
@@ -38,6 +38,18 @@
   margin: 0 auto;
 }
 
+.home__channels h1 {
+  position: absolute;
+  color: white;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0px 0px 2px black;
+  background-color: rgba(0, 0, 0, 0.088);
+  width: 20vw;
+  padding: 0.5rem;
+}
+
 .home__channel {
   position: relative;
   background-color: white;
@@ -62,7 +74,7 @@
 .home__channel img {
   display: flex;
   position: relative;
-  width: 20vw;
+  width: 100%;
   min-width: 170px;
   height: auto;
   z-index: 0;
@@ -127,8 +139,10 @@
   border-top: 4px solid rgb(113, 191, 240);
 }
 
-/* .home__bottom {
-} */
+.home__bottom {
+  position: fixed;
+  bottom: 0px;
+}
 
 .home__centerBlock {
   height: 81px;

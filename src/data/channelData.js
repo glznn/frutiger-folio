@@ -26,7 +26,7 @@ export const channelData = [
     },
     {
         name:"Credits",
-        image: '',
+        image: '/images/credits2.png',
         path: '/credits',
         next:'/game'
     },
