@@ -7,8 +7,8 @@ function Credits() {
     <div className="Credits">  
         <div className="credits__content">
           <div className="credits__header">
-            Credits <br/>
-            Created using React <br/>
+            Credits<br/>
+            Created using ReactJS<br/>
           </div>
           <div className="credits__layout">
             <div className="credits__packages">
@@ -18,14 +18,28 @@ function Credits() {
               <span id="by">by</span>
               <a href="https://reactrouter.com/"
               target='_blank'>
-              React Router </a>
+              React Router</a>
+              <br/>
+
+              <a href="https://react-icons.github.io/react-icons/search/#q=grmail"
+              target='_blank'>
+              Mail</a> 
+              ‎  ‎ and‎ ‎ ‎ 
+              <a href="https://react-icons.github.io/react-icons/search/#q=RiFileInfo"
+              target='_blank'>
+              Info</a>
+              ‎ ‎ Icons
+              <span id="by">by</span> 
+              <a href="https://react-icons.github.io/react-icons/"
+              target='_blank'>
+              React Icons</a> 
               <br/>
 
               Form Submission Alert 
               <span id="by">by</span> 
               <a href="https://sweetalert2.github.io/"
               target='_blank'>
-              Sweet Alert </a> 
+              Sweet Alert</a> 
               <br/>
 
             </div>
@@ -34,29 +48,29 @@ function Credits() {
 
               <a href="https://pixabay.com/gifs/noise-frequency-sound-noisy-tv-18561/"
               target='_blank'> 
-              Tv-Static gif </a>
+              Tv-Static gif</a>
               <span id="by">by</span>
               <a href="https://www.psd-dude.com/"
               target='_blank'> 
-              Psddude </a> 
+              Psddude</a> 
               <br/>
 
               <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o"
               target='_blank'>
-              Analog image </a> 
+              Analog image</a> 
               <span id="by">by</span>
               <a href="https://unsplash.com/@bernardhermant"
               target='_blank'>
-              Bernard Hermant </a>
+              Bernard Hermant</a>
               <br/>
 
               <a href="https://fontesk.com/two-weekends-sans-font/"
               target='_blank'>
-              Two Weekends Sans Font </a>
+              Two Weekends Sans Font</a>
               <span id="by">by</span>
               <a href="https://github.com/AlphaZTX"
               target='_blank'>
-              T. X. Zhang </a>
+              T. X. Zhang</a>
               <br/>
             </div>
           </div>
@@ -66,10 +80,10 @@ function Credits() {
             <span id="by">by</span> 
             <a href="https://wii.fandom.com/wiki/Wii_Menu"
             target='_blank'>
-            Ninendo Wii Menu </a>
+            Ninendo Wii Menu</a>
             <br/>
             
-            (I am not affiliated with Nintendo!) <br/><br/><br/><br/>
+            (This is a personal project and is not affiliated with Nintendo in any way.) <br/>
           </div>
         <BottomChannel/>
         </div>

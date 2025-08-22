@@ -1,5 +1,5 @@
 import './Home.css';
-import {channelData} from './data/channelData.js';
+import { channelData } from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
 import { LuSquareX } from "react-icons/lu";
