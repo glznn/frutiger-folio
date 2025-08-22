@@ -6,6 +6,7 @@ function Exedra() {
   return (
     <div className="Exedra">
         Exedra
+        <img src="/images/exedra-preview.png"/>
         <BottomChannel/>
     </div>
   )

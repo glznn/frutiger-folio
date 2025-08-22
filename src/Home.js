@@ -33,7 +33,7 @@ function Home() {
                 }}
               >
                 <img src={channel.image}/>
-                <h1>{channel.name}</h1>
+                <h1>{channel.text}</h1>
               </li>
             )
           })}
@@ -126,7 +126,7 @@ function ContactMe({ onClose }) {
     <div className="contact__background">
       <div className="contact__exit" 
       onClick={onClose}>
-        <h1 className="contact__exitIcon"> <LuSquareX /> </h1>
+        <h1 className="contact__exitIcon"> X </h1>
       </div>
       <form className="contact__me" onSubmit={onSubmit}>
         <br/><br/><br/> 
