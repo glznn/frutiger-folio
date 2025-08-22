@@ -13,42 +13,59 @@ function Credits() {
           <div className="credits__layout">
             <div className="credits__packages">
               <h1>Packages</h1>
-              <a href="https://sweetalert2.github.io/">
-              Sweet Alert </a> 
-              <br/>
-              <a href="https://reactrouter.com/">
+
+              Routing
+              <span id="by">by</span>
+              <a href="https://reactrouter.com/"
+              target='_blank'>
               React Router </a>
               <br/>
+
+              Form Submission Alert 
+              <span id="by">by</span> 
+              <a href="https://sweetalert2.github.io/"
+              target='_blank'>
+              Sweet Alert </a> 
+              <br/>
+
             </div>
             <div className="credits__assets">
               <h1>Assets</h1>
 
-              <a href="https://pixabay.com/gifs/noise-frequency-sound-noisy-tv-18561/"> 
+              <a href="https://pixabay.com/gifs/noise-frequency-sound-noisy-tv-18561/"
+              target='_blank'> 
               Tv-Static gif </a>
-              by 
-              <a href="https://www.psd-dude.com/"> 
+              <span id="by">by</span>
+              <a href="https://www.psd-dude.com/"
+              target='_blank'> 
               Psddude </a> 
               <br/>
 
-              <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o">
+              <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o"
+              target='_blank'>
               Analog image </a> 
-              by
-              <a href="https://unsplash.com/@bernardhermant">
+              <span id="by">by</span>
+              <a href="https://unsplash.com/@bernardhermant"
+              target='_blank'>
               Bernard Hermant </a>
               <br/>
 
-              <a href="https://fontesk.com/two-weekends-sans-font/">
+              <a href="https://fontesk.com/two-weekends-sans-font/"
+              target='_blank'>
               Two Weekends Sans Font </a>
-              by 
-              <a href="https://github.com/AlphaZTX">
+              <span id="by">by</span>
+              <a href="https://github.com/AlphaZTX"
+              target='_blank'>
               T. X. Zhang </a>
               <br/>
             </div>
           </div>
           <div className="credits__design">
             <h1>Design</h1>
-            Design inspired by 
-            <a href="https://wii.fandom.com/wiki/Wii_Menu">
+            Design inspired
+            <span id="by">by</span> 
+            <a href="https://wii.fandom.com/wiki/Wii_Menu"
+            target='_blank'>
             Ninendo Wii Menu </a>
             <br/>
             
