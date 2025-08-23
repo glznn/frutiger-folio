@@ -22,13 +22,6 @@ export const channelData = [
         next:'/'
     },
     {
-        name:"Your Name Here!",
-        text: "Your Name Here!",
-        image: '',
-        path: '/',
-        next:'/credits'
-    },
-    {
         name:"Credits",
         text: "Credits",
         image: '/images/credits2.png',
@@ -36,8 +29,15 @@ export const channelData = [
         next:'/game'
     },
     {
+        name:"Your Name Here!",
+        text: "Your Name Here!",
+        image: '',
+        path: '/',
+        next:'/credits'
+    },
+    {
         name:"Game",
-        text: "",
+        text: "Game",
         image: '',
         path: '/game'
     },

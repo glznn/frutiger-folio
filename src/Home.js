@@ -4,10 +4,13 @@ import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
 import { LuSquareX } from "react-icons/lu";
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 function Home() {
 
+  const navigate = useNavigate();
+  
   const [mailClicked, setMailClicked] = useState(false);
   const [infoClicked, setInfoClicked] = useState(false);
 
@@ -28,8 +31,11 @@ function Home() {
               <li
                 key={key}
                 className="home__channel"
+                
                 onClick={() => {
-                  window.location.pathname = `${channel.path}`
+                  document.startViewTransition(() => {
+                    navigate(`${channel.path}`);
+                  })
                 }}
               >
                 <img src={channel.image}/>
