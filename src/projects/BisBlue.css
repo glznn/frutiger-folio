@@ -1,0 +1,15 @@
+.BisBlue {
+    height: 80vh;
+}
+
+.bb__image {
+    position: absolute;
+    left: 25%;
+    top: 0px;
+    transform: translateX(-30%);
+}
+
+.bb__image img {
+    height: 80vh;
+    object-fit: cover;
+}

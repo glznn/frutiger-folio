@@ -6,7 +6,9 @@ function BisBlue() {
   return (
     <div className="BisBlue">
         Bis Blue
-        <img src="/images/bis-blue-preview.png"/>
+        <div className="bb__image">
+          <img src="/images/bis-blue-preview.png"/>
+        </div>
         <BottomChannel/>
     </div>
   )
