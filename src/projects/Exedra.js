@@ -5,8 +5,9 @@ import BottomChannel from '../components/BottomChannel'
 function Exedra() {
   return (
     <div className="Exedra">
-        Exedra
-        <img src="/images/exedra-preview.png"/>
+        <div className="ex__image">
+          <img src="/images/exedra-preview.png"/>
+        </div>
         <BottomChannel/>
     </div>
   )

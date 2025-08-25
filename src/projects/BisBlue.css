@@ -1,5 +1,10 @@
 .BisBlue {
     height: 80vh;
+
+    background-color: black;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    box-shadow: 0 0 0 8px rgb(166, 166, 166);
 }
 
 .bb__image {
