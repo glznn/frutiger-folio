@@ -74,7 +74,7 @@
 .home__channel img {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 102%;
   min-width: 170px;
   height: auto;
   z-index: 0;

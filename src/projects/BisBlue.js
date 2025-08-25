@@ -7,7 +7,11 @@ function BisBlue() {
     <div className="BisBlue">
       <div className="bb__layout">
         <div className="bb__image">
-          <img src="/images/bis-blue-preview.png"/>
+          <a href="http://bisblue.com"
+          target="_blank"
+          >
+            <img src="/images/bis-blue-preview.png"/>
+          </a>
         </div>
         <div className="bb__content">
           <h1> classic, timeless design </h1>

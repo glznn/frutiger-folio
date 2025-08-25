@@ -9,7 +9,7 @@ export const channelData = [
     {
         name:"Bis Blue",
         text: "",
-        image: '/images/bis-blue-preview.png',
+        image: '/images/bis-blue-preview.gif',
         path: '/bis-blue',
         next:'/exedra'
 
@@ -17,7 +17,7 @@ export const channelData = [
     {
         name: "Exedra",
         text: "",
-        image: '/images/exedra-preview.png',
+        image: '/images/exedra-preview.gif',
         path: '/exedra',
         next:'/'
     },

@@ -7,8 +7,12 @@ function Credits() {
     <div className="Credits">  
         <div className="credits__content">
           <div className="credits__header">
-            Credits<br/>
-            Created using ReactJS<br/>
+            <div className="credits__title">  Credits   </div>
+            Created using‎  ‎
+            <a href="https://react.dev/"
+            target='_blank'>
+            ReactJS</a>
+            <br/>
           </div>
           <div className="credits__layout">
             <div className="credits__packages">

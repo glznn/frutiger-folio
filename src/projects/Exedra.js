@@ -15,7 +15,7 @@ function Exedra() {
       </div>
 
         <BottomChannel/>
-        
+
     </div>
   )
 }
