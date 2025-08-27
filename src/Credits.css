@@ -43,7 +43,7 @@
     text-align: center;
     font-weight: 100;
     margin-bottom: 5px;
-        transform: skewX(-8deg);
+    transform: skewX(-8deg);
     -webkit-text-stroke: 0.2px gray;
     text-shadow: 2px 2px 5px white;
 }
