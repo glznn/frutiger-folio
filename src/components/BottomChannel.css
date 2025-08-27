@@ -22,12 +22,12 @@
 
 .bottomChannel__menu {
     position: absolute;
-    left: 35%;
+    left: 35vw;
     bottom: 20%;
 }
 
 .bottomChannel__viewMore {
     position: absolute;
-    left: 65%;
+    left: 65vw;
     bottom: 20%;
 }

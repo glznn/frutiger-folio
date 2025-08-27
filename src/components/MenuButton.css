@@ -15,7 +15,8 @@
 .MenuButton {
   position: absolute;
   z-index: 10;
-  width: 330px;
+  width: 25vw;
+  max-width: 330px;
   height: 80px;
   padding-top: 4px;
 
