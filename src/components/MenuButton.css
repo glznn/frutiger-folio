@@ -53,9 +53,7 @@
 }
 
 .MenuButton:hover {
-  height: calc(80px * 1.1);
-  width: calc(330px * 1.1);
-
+  width: calc(min(25vw, 330px) * 1.1);
   cursor: pointer;
 }
 
