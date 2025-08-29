@@ -1,0 +1,46 @@
+.SwapArrow {
+    font-size: 100px;
+    color:  rgb(113, 191, 240);
+}
+
+.swap__left, .swap__right {
+    position: absolute;
+    top: 30%;
+}
+
+.swap__left {
+    left: 0px;
+}
+
+.swap__left:after {
+    position: absolute;
+    content:'';
+    z-index: 0;
+    top: 35px;
+    left: 49px;
+    width: 8px;
+    height: 22px;
+    transform: skewX(-45deg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.144));
+}
+
+.swap__right {
+    right: 0px;
+}
+
+.swap__right:after {
+    position: absolute;
+    content:'';
+    z-index: 0;
+    bottom: 53px;
+    left: 42px;
+    width: 8px;
+    height: 22px;
+    transform: skewX(-45deg);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.144));
+}
+
+.swap__left:hover, .swap__right:hover {
+    cursor: pointer;
+}
+
