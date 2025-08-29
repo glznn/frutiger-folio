@@ -1,9 +1,11 @@
 import React from 'react'
 import './Credits.css'
+import SwapArrow from './components/SwapArrow.js'
 import BottomChannel from './components/BottomChannel.js'
 
 function Credits() {
   return (
+    <>
     <div className="Credits">  
         <div className="credits__content">
           <div className="credits__header">
@@ -89,9 +91,11 @@ function Credits() {
             
             (This is a personal project and is not affiliated with Nintendo in any way.) <br/>
           </div>
-        <BottomChannel/>
+        <BottomChannel />
         </div>
     </div>
+    <SwapArrow />
+    </>
   )
 }
 

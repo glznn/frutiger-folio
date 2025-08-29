@@ -1,5 +1,6 @@
 import React from 'react'
 import './BisBlue.css'
+import SwapArrow from '../components/SwapArrow.js'
 import BottomChannel from '../components/BottomChannel'
 
 function BisBlue() {
@@ -21,8 +22,8 @@ function BisBlue() {
           <h1> simple modern aesthetic </h1>
         </div>
       </div>
-
-      <BottomChannel/>
+      <SwapArrow />
+      <BottomChannel />
 
     </div>
   )

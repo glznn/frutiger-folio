@@ -1,5 +1,6 @@
 import React from 'react'
 import './Exedra.css'
+import SwapArrow from '../components/SwapArrow.js'
 import BottomChannel from '../components/BottomChannel'
 
 function Exedra() {
@@ -14,7 +15,8 @@ function Exedra() {
         </div>
       </div>
 
-        <BottomChannel/>
+      <SwapArrow />
+      <BottomChannel />
 
     </div>
   )
