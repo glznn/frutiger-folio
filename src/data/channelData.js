@@ -4,14 +4,16 @@ export const channelData = [
         text: "Contact",
         image: '',
         path: '/contact',
-        next:'/bis-blue'
+        next:'/bis-blue',
+        status: 'active'
     },
     {
         name:"Bis Blue",
         text: "",
         image: '/images/bis-blue-preview.gif',
         path: '/bis-blue',
-        next:'/exedra'
+        next:'/exedra',
+        status: 'active'
 
     },
     {
@@ -19,27 +21,32 @@ export const channelData = [
         text: "",
         image: '/images/exedra-preview.gif',
         path: '/exedra',
-        next:'/'
+        next:'/credits',
+        status: 'active'
     },
     {
         name:"Credits",
         text: "Credits",
         image: '/images/credits2.png',
         path: '/credits',
-        next:'/game'
+        next:'/promo',
+        status: 'active'
     },
     {
         name:"Your Name Here!",
         text: "Your Name Here!",
         image: '',
-        path: '/',
-        next:'/credits'
+        path: '/promo',
+        next:'/credits',
+        status: 'active'
     },
     {
         name:"Game",
         text: "Game",
         image: '',
-        path: '/game'
+        path: '/game',
+        next:'/',
+        status: 'active'
     },
     {
         image: '/images/tv-static.gif',

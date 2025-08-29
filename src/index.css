@@ -1,8 +1,8 @@
 :root {
   background-image: url('/public/images/analog-background.jpg');
-  background-size:900px;
+  background-size:1000px;
   background-color: rgba(255, 255, 255, 0.89);
-  background-blend-mode: lighten;
+  background-blend-mode:color;
   overflow-y: hidden;
 
   view-transition-name: root;

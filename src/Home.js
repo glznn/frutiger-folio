@@ -38,7 +38,7 @@ function Home() {
                   })
                 }}
               >
-                <img src={channel.image}/>
+                <img id={channel.status} src={channel.image}/>
                 <h1>{channel.text}</h1>
               </li>
             )

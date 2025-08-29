@@ -24,7 +24,7 @@
 
 .home__menu {
   position: relative;
-  display: block; /*fixed*/
+  display: block;
   justify-content: center;
 }
 
@@ -82,7 +82,7 @@
   transition: all ease-in-out 1s;
 }
 
-.home__channel img:hover {
+#active:hover {
   opacity: 1;
   transform: scale(1.1);
 }
