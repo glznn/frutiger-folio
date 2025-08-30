@@ -91,7 +91,7 @@ function Credits() {
             
             (This is a personal project and is not affiliated with Nintendo in any way.) <br/>
           </div>
-        <BottomChannel />
+        <BottomChannel buttonText={"Learn more"} pathName={"/"} />
         </div>
     </div>
     <SwapArrow />

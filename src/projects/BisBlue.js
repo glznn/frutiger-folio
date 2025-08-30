@@ -15,6 +15,7 @@ function BisBlue() {
           </a>
         </div>
         <div className="bb__content">
+          <img className="bb__logo" src="/images/BB_Logo.png" />
           <h1> minimalist design, focus on product </h1>
           <h1> sleek, familiar interface </h1>
           <h1> integrated with shopify custom design</h1>
@@ -23,7 +24,7 @@ function BisBlue() {
         </div>
       </div>
       <SwapArrow />
-      <BottomChannel />
+      <BottomChannel buttonText={"Learn more"} pathName={"/"} />
 
     </div>
   )

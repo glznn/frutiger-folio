@@ -16,7 +16,7 @@ function Exedra() {
       </div>
 
       <SwapArrow />
-      <BottomChannel />
+      <BottomChannel buttonText={"Learn more"} pathName={"/"} />
 
     </div>
   )

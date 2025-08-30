@@ -3,7 +3,7 @@ import React from 'react'
 import './MenuButton.css'
 import { useNavigate } from 'react-router-dom'
 
-function MenuButton( {text} ) {
+function MenuButton( {text, path} ) {
 
   const navigate = useNavigate();
 
@@ -11,7 +11,7 @@ function MenuButton( {text} ) {
     <button className="MenuButton"
     onClick={() => {
         document.startViewTransition(() => {
-        navigate("/");
+        navigate(path);
       });
     }}
     >   {text}    </button>

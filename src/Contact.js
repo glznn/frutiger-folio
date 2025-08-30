@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="Contact">
       <SwapArrow />
-      <BottomChannel />
+      <BottomChannel buttonText={"Contact"} pathName={"/"}/>
     </div>
   )
 }

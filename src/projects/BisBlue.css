@@ -38,3 +38,10 @@
     font-weight: 100;
     letter-spacing: -1px;
 }
+
+.bb__logo {
+    margin-top: -10rem;
+    margin-bottom: -8rem;
+    padding-right: 2rem;
+    width: 400px;
+}
