@@ -8,6 +8,12 @@ export const TransitionHandler = ( {children} ) => {
 
     const getTransition = (from, to) => {
         if (!from || !to) return 'fade';
+        if (from.pathname === '/') return 'fade';
+        if (to.pathname === '/') return 'fade';
+        if (from.pathname === '/contact' && to.pathname === '/bis-blue') return 'slide-left'
+        if (from.pathname === '/bis-blue' && to.pathname === '/contact') return 'slide-right'
+        if (from.pathname === '/bis-blue' && to.pathname === '/exedra') return 'slide-left'
+
         return 'slide-right';
     }
 
@@ -20,11 +26,16 @@ export const TransitionHandler = ( {children} ) => {
             exit: { opacity: 0.75 }
         },
         'slide-right': {
-            initial: { x: '-25%'},
-            animate: { x: 0, y:0 },
-            exit: { x: '75%'},
+            initial: { x: '-25%' },
+            animate: { x: 0 },
+            exit: { x: '0%' },
+        },
+        'slide-left': {
+            initial: { x: "100%" },
+            animate: { x: 0 },
+            exit: { x: "0%" }
+            }
         }
-    }
 
     return (
         <AnimatePresence mode="wait">
@@ -34,7 +45,7 @@ export const TransitionHandler = ( {children} ) => {
                 initial={transitions[transitionType].initial}
                 animate={transitions[transitionType].animate}
                 exit={transitions[transitionType].exit}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.2, ease: 'easeInOut' }}
             >
                 {children}
             </motion.div>
