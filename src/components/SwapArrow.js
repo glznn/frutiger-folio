@@ -20,6 +20,10 @@ function SwapArrow() {
             <FaCaretLeft />
         </div>
 
+        <div className="swap__leftShadow"> 
+            <FaCaretLeft />
+        </div>
+
         <div className="swap__right"
             onClick={ () => {
                 document.startViewTransition(() => {
@@ -29,6 +33,11 @@ function SwapArrow() {
         >
             <FaCaretRight />
         </div>
+        
+        <div className="swap__rightShadow">
+            <FaCaretRight />
+        </div>
+
     </div>
   )
 }

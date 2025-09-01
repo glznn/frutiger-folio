@@ -5,6 +5,7 @@
 
 .swap__left, .swap__right {
     position: absolute;
+    z-index: 1;
     top: 35%;
 }
 
@@ -42,5 +43,20 @@
 
 .swap__left:hover, .swap__right:hover {
     cursor: pointer;
+}
+
+.swap__leftShadow, .swap__rightShadow {
+    position: absolute;
+    z-index: 0;
+    top: 35.5%;
+    color: rgba(255, 255, 255, 0.805);
+}
+
+.swap__leftShadow {
+    left: 2.5px;
+}
+
+.swap__rightShadow {
+    right: 2.5px;
 }
 
