@@ -13,7 +13,7 @@ function Credits() {
             Created using‎  ‎
             <a href="https://react.dev/"
             target='_blank'>
-            ReactJS</a>
+            React.js</a>
             <br/>
           </div>
           <div className="credits__layout">
@@ -22,19 +22,34 @@ function Credits() {
 
               Routing
               <span id="by">by</span>
+              <a href="https://motion.dev/"
+              target='_blank'>
+              Framer Motion</a>
+              <br/>
+
+              Route Animations
+              <span id="by">by</span>
               <a href="https://reactrouter.com/"
               target='_blank'>
               React Router</a>
               <br/>
 
+              <a href="https://react-icons.github.io/react-icons/search/#q=FaCaret"
+              target='_blank'>
+              Arrow</a> 
+              ‎ ‎ ‎
+
               <a href="https://react-icons.github.io/react-icons/search/#q=grmail"
               target='_blank'>
               Mail</a> 
-              ‎  ‎ and‎ ‎ ‎ 
+              ‎ ‎ ‎
+
               <a href="https://react-icons.github.io/react-icons/search/#q=RiFileInfo"
               target='_blank'>
               Info</a>
-              ‎ ‎ Icons
+              ‎ ‎
+              
+              Icons
               <span id="by">by</span> 
               <a href="https://react-icons.github.io/react-icons/"
               target='_blank'>
