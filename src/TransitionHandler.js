@@ -26,22 +26,26 @@ export const TransitionHandler = ( {children} ) => {
         'fade-into': { 
             initial: { opacity: 0.75 }, 
             animate: { opacity: 1 },
-            exit: { opacity: 0.75 }
+            exit: { opacity: 0.75 },
+            transition: { duration: 0.25 }
         },
         'slide-right': {
             initial: { x: '-100%' },
             animate: { x: 0 },
             exit: { x: '0%' },
+            transition: { duration: 0.75 }
         },
         'slide-left': {
             initial: { x: "100%" },
             animate: { x: 0 },
-            exit: { x: "0%" }
+            exit: { x: "0%" },
+            transition: { duration: 0.75 }
             },
         'none': {
             initial: { x: 0 },
             animate: { x: 0 },
-            exit: { x: 0 }
+            exit: { x: 0 },
+            transition: { duration: 0.75 }
             }
         }
         
@@ -53,7 +57,7 @@ export const TransitionHandler = ( {children} ) => {
                 initial={transitions[transitionType].initial}
                 animate={transitions[transitionType].animate}
                 exit={transitions[transitionType].exit}
-                transition={{ duration: 0.75 }}
+                transition={transitions[transitionType].transition}
             >
                 {children}
             </motion.div>
