@@ -6,17 +6,17 @@ import { channelData } from './data/channelData'
 export const TransitionHandler = ( {children} ) => {
     const location = useLocation();
     const previousLocation = usePreviousRoute();
-    const channelDataIndex = 
-        channelData.findIndex(channel => channel.path === previousLocation.pathname);
 
     const getTransition = (from, to) => {
         if (!from || !to) return 'fade-into';
-        if (from.pathname === '/') return 'fade-into';
+        if (from.pathname === '/') return 'none';
         if (to.pathname === '/') return 'fade-into';
+        
+        const channelDataIndex = channelData.findIndex(channel => channel.path === from.pathname);
         if (channelDataIndex === -1) return 'none';
+
         if (channelData[channelDataIndex].next === to.pathname) return 'slide-left';
         if (channelData[channelDataIndex].prev === to.pathname) return 'slide-right';
-
         return 'none';
     }
 
@@ -42,9 +42,9 @@ export const TransitionHandler = ( {children} ) => {
             initial: { x: 0 },
             animate: { x: 0 },
             exit: { x: 0 }
+            }
         }
-        }
-
+        
     return (
         <AnimatePresence mode="wait">
             <motion.div
@@ -61,8 +61,6 @@ export const TransitionHandler = ( {children} ) => {
     )
 }
 
-
-
 // Keeps track of current page, sets previous equal to 
 // current location whenever the route is swapped.
 // Feeds this info to the handler to decide what transition
@@ -72,7 +70,7 @@ function usePreviousRoute() {
     const previous = useRef(null);
 
     useEffect(() => {
-        previous.current = location; 
+        previous.current = location;
     }, [location]);
 
     return previous.current;

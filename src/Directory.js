@@ -15,9 +15,9 @@ function Directory() {
               <Route path="/" element = {<Home />}/>
               <Route path="/contact" element={<Contact />}/>
               <Route path="/credits" element={<Credits />}/>
-              <Route path="/bis-blue" element={<BisBlue/>}/>
-              <Route path="/exedra" element={<Exedra/>}/>
-              <Route path="/promo" element={<Promo/>}/>
+              <Route path="/bis-blue" element={<BisBlue />}/>
+              <Route path="/exedra" element={<Exedra />}/>
+              <Route path="/promo" element={<Promo />}/>
           </Routes>
     </TransitionHandler>
   )
