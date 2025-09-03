@@ -83,6 +83,8 @@ function Home() {
 
 export function ContactMe({ onClose }) {
 
+  const currentPath = window.location.pathname;
+
   const onSubmit = async (event) => {
     event.preventDefault();
      Swal.fire({
@@ -127,9 +129,17 @@ export function ContactMe({ onClose }) {
   //     setResult(data.message);
   //   }
   // };
+
+
+/*
+* --------------------------------------------------
+* Contact Form
+* --------------------------------------------------
+*/
   
+
   return (
-    <div className="contact__background">
+    <div className="contact__background" id={currentPath.substring(1, currentPath.length)}>
       <div className="contact__exit" 
       onClick={onClose}>
         <h1 className="contact__exitIcon"> X </h1>

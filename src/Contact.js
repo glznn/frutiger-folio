@@ -1,15 +1,23 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Contact.css'
 import SwapArrow from './components/SwapArrow.js'
-import BottomChannel from './components/BottomChannel.js'
 import { ContactMe } from './Home.js'
 
 function Contact() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="Contact">
-      <ContactMe />
+      <div className="contact__layout">
+          <ContactMe onClose={() => 
+              document.startViewTransition(() => {
+                navigate('/');
+              })
+          }/>
+      </div>
       <SwapArrow />
-      <BottomChannel buttonText={"Contact"} pathName={"/"}/>
     </div>
   )
 }

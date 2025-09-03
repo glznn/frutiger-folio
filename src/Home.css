@@ -314,6 +314,11 @@
   height: 100vh;
 }
 
+#contact {
+  width: 0;
+  height: 0;
+}
+
 .contact__me::before {
   background-image: url("/public/images/analog-background.jpg");
   background-size: cover;

@@ -1,4 +1,13 @@
 .Contact {
-    font-family: 'two-weekend-bold';
     text-align: center;
+
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    box-shadow: 0 0 0 8px rgb(166, 166, 166);
+}
+
+.contact__layout {
+    font-family: 'two-weekend-bold'
 }
