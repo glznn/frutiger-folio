@@ -87,6 +87,10 @@
   transform: scale(1.1);
 }
 
+#inactive:hover {
+  cursor:grab;
+}
+
 .home__content {
   padding-top: 1rem;
 }

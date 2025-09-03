@@ -81,7 +81,7 @@ function Home() {
   );
 }
 
-function ContactMe({ onClose }) {
+export function ContactMe({ onClose }) {
 
   const onSubmit = async (event) => {
     event.preventDefault();

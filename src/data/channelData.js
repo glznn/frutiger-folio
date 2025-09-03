@@ -53,7 +53,7 @@ export const channelData = [
         prev: '/credits',
         next:'/game',
 
-        status: 'active'
+        status: 'inactive',
     },
     {
         name:"Game",
@@ -68,26 +68,38 @@ export const channelData = [
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
     {
         image: '/images/tv-static.gif',
-        path: '/'
+        path: '/',
+
+        status: 'inactive',
     },
 ]
