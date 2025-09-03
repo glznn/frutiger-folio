@@ -314,7 +314,7 @@
   height: 100vh;
 }
 
-#contact {
+#contact__background {
   width: 0;
   height: 0;
 }
@@ -361,8 +361,8 @@
 .contact__exit {
   position: fixed;
   z-index: 101;
-  right: 5vw;
-  top: 2vh;
+  right: 8vw;
+  top: 2.5vh;
   background: radial-gradient(white, lightgray, gray);
   width: 68px;
   height: 68px;

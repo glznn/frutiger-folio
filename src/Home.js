@@ -139,7 +139,7 @@ export function ContactMe({ onClose }) {
   
 
   return (
-    <div className="contact__background" id={currentPath.substring(1, currentPath.length)}>
+    <div className="contact__background" id={`${currentPath.substring(1, currentPath.length)}__background`}>
       <div className="contact__exit" 
       onClick={onClose}>
         <h1 className="contact__exitIcon"> X </h1>
