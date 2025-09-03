@@ -2,7 +2,7 @@ export const channelData = [
     {
         name:"Contact",
         text: "Contact",
-        image: '',
+        image: '/images/contact-preview.png',
 
         path: '/contact',
         prev:'/',
