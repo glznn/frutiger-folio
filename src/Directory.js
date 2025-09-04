@@ -4,6 +4,7 @@ import Home from './Home'
 import Credits from './Credits'
 import Contact from './Contact'
 import Promo from './Promo';
+import Game from './Game';
 import BisBlue from './projects/BisBlue';
 import Exedra from './projects/Exedra';
 import { TransitionHandler } from './TransitionHandler';
@@ -18,6 +19,7 @@ function Directory() {
               <Route path="/bis-blue" element={<BisBlue />}/>
               <Route path="/exedra" element={<Exedra />}/>
               <Route path="/promo" element={<Promo />}/>
+              <Route path="/game" element={<Game />}/>
           </Routes>
     </TransitionHandler>
   )

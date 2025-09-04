@@ -9,6 +9,8 @@ import Swal from 'sweetalert2'
 
 function Home() {
 
+  document.title = "Home";
+
   const navigate = useNavigate();
   
   const [mailClicked, setMailClicked] = useState(false);

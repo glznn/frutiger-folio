@@ -4,6 +4,9 @@ import SwapArrow from '../components/SwapArrow.js'
 import BottomChannel from '../components/BottomChannel'
 
 function Exedra() {
+
+  document.title= "Project: Bis Blue"
+  
   return (
     <div className="Exedra">
       <div className="ex__layout">

@@ -4,6 +4,9 @@ import SwapArrow from '../components/SwapArrow.js'
 import BottomChannel from '../components/BottomChannel'
 
 function BisBlue() {
+
+  document.title= "Project: Bis Blue";
+
   return (
     <div className="BisBlue">
       <div className="bb__layout">

@@ -6,6 +6,8 @@ import { ContactMe } from './Home.js'
 
 function Contact() {
 
+  document.title= "Contact Me";
+
   const navigate = useNavigate();
 
   return (

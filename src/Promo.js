@@ -4,6 +4,9 @@ import SwapArrow from './components/SwapArrow'
 import BottomChannel from './components/BottomChannel'
 
 function Promo() {
+
+  document.title= "Your Name Here!"
+
   return (
     <div className="Promo">
 

@@ -4,6 +4,9 @@ import SwapArrow from './components/SwapArrow.js'
 import BottomChannel from './components/BottomChannel.js'
 
 function Credits() {
+
+  document.title= "Portfolio Credits"
+
   return (
     <>
     <div className="Credits">  
