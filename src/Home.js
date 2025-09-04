@@ -41,7 +41,7 @@ function Home() {
                   })
                 }}
               >
-                <img id={channel.status} src={channel.image}/>
+                <img id={channel.status} src={channel.image} loading="lazy"/>
                 <h1>{channel.text}</h1>
               </li>
             )

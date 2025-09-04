@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, easeInOut, motion } from 'framer-motion'
 import { channelData } from './data/channelData'
 
 export const TransitionHandler = ( {children} ) => {
@@ -27,19 +27,19 @@ export const TransitionHandler = ( {children} ) => {
             initial: { opacity: 0.75 }, 
             animate: { opacity: 1 },
             exit: { opacity: 0.75 },
-            transition: { duration: 0.25 }
+            transition: { duration: 0.25, easeInOut }
         },
         'slide-right': {
             initial: { x: '-100%' },
             animate: { x: 0 },
             exit: { x: '0%' },
-            transition: { duration: 0.75 }
+            transition: { duration: 0.75, easeInOut }
         },
         'slide-left': {
             initial: { x: "100%" },
             animate: { x: 0 },
             exit: { x: "0%" },
-            transition: { duration: 0.75 }
+            transition: { duration: 0.75, easeInOut }
             },
         'none': {
             initial: { x: 0 },

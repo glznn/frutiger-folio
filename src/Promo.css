@@ -1,3 +1,23 @@
 .Promo {
     display: flex;
+    flex-direction: column;
+
+    height: 79.4vh;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    box-shadow: 0 0 0 8px rgb(166, 166, 166);
+
+    background: linear-gradient(rgba(128, 128, 128, 0.712), rgba(255, 255, 255, 0.91));
+    overflow: hidden;
 }
+
+.promo__text {
+    font-family: 'two-weekend-bold';
+    font-size: 90px;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+

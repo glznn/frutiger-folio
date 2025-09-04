@@ -46,14 +46,14 @@ export const channelData = [
     },
     {
         name:"Your Name Here!",
-        text: "Your Name Here!",
-        image: '',
+        text: "",
+        image: '/images/promo-preview.gif',
 
         path: '/promo',
         prev: '/credits',
         next:'/game',
 
-        status: 'inactive',
+        status: 'active',
     },
     {
         name:"Game",
