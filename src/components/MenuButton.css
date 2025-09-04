@@ -55,9 +55,6 @@
 .MenuButton:hover {
   width: calc(min(25vw, 330px) * 1.1);
   cursor: pointer;
-}
-
-.MenuButton:hover {
   box-shadow: 0px 0px 15px 10px rgb(159, 159, 159),
     inset 0px 0px 10px 40px rgba(35, 125, 173, 0.200);
 }

@@ -370,13 +370,20 @@
   border-radius: 10000px;
   color: gray;
   outline: 2px solid rgb(255, 255, 255);
-  box-shadow: inset 0px 0px 30px 3px rgba(0, 0, 0, 0.229)
+  box-shadow: inset 0px 0px 30px 3px rgba(0, 0, 0, 0.229);
+
+  transition: box-shadow ease-in-out 0.35s;
 }
 
-.contact__exitIcon {
+.contact__exitIcon, .contact__homeIcon {
   margin-top: 16px;
   font-size: 40px;
   text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.263);
+}
+
+.contact__homeIcon {
+  margin-top: 8px;
+  font-size: 50px;
 }
 
 .contact__exit::after { 
@@ -544,6 +551,8 @@
   font-family: 'two-weekend-bold';
   font-size: 25px;
   color:rgb(73, 73, 73);
+
+  transition: box-shadow ease-in-out 0.35s;
 }
 
 .contact__submit:after {
@@ -562,9 +571,10 @@
 
 .contact__submit:hover {
   cursor: pointer;
-  outline: 2.5px solid white;
-  box-shadow: none;
+  box-shadow: 0px 0px 15px 10px rgba(159, 159, 159, 0),
+    inset 0px 0px 10px 40px rgba(35, 125, 173, 0.200);
 }
+
 
 /*
 * --------------------------------------------------

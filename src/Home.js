@@ -3,6 +3,7 @@ import { channelData } from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
 import { LuSquareX } from "react-icons/lu";
+import { MdHome } from "react-icons/md";
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
@@ -144,7 +145,12 @@ export function ContactMe({ onClose }) {
     <div className="contact__background" id={`${currentPath.substring(1, currentPath.length)}__background`}>
       <div className="contact__exit" 
       onClick={onClose}>
-        <h1 className="contact__exitIcon"> X </h1>
+        <h1 className="contact__exitIcon"
+          style={{ display: currentPath === "/" ? "": "none" }}
+        > X </h1>
+        <h1 className="contact__homeIcon"
+          style={{ display: currentPath === "/contact" ? "": "none" }}
+        > <MdHome/> </h1>
       </div>
       <form className="contact__me" onSubmit={onSubmit}>
         <br/><br/><br/> 
