@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Directory from './Directory';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import SwapArrow from './components/SwapArrow';
+import BottomChannel from './components/BottomChannel';
+import { channelData } from './data/channelData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Directory />
-      <SwapArrow />
+      <HasSwapArrow />
+      <HasFooter />
     </BrowserRouter>
   </React.StrictMode>
 );
@@ -20,3 +23,20 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+function HasFooter() {
+  const location = useLocation();
+  const index = findChannelIndex(location.pathname);
+  if (location.pathname === '/' || location.pathname === '/contact') return null;
+  return <BottomChannel buttonText={channelData[index].buttonText} pathName={channelData[index].buttonPath}/>;
+}
+
+function HasSwapArrow() {
+  const location = useLocation();
+  if (location.pathname === '/') return null;
+  return <SwapArrow />;
+}
+
+export function findChannelIndex(currentPath) {
+    return channelData.findIndex(channel => channel.path === currentPath)
+}

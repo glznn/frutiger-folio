@@ -1,5 +1,6 @@
 import React from 'react'
 import './SwapArrow.css'
+import { findChannelIndex } from '..';
 import { channelData } from '../data/channelData';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,10 +41,6 @@ function SwapArrow() {
 
     </div>
   )
-}
-
-function findChannelIndex(currentPath) {
-    return channelData.findIndex(channel => channel.path === currentPath)
 }
 
 export default SwapArrow

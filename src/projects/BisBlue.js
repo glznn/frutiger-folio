@@ -1,6 +1,5 @@
 import React from 'react'
 import './BisBlue.css'
-import BottomChannel from '../components/BottomChannel'
 
 function BisBlue() {
 
@@ -25,7 +24,6 @@ function BisBlue() {
           <h1> simple modern aesthetic </h1>
         </div>
       </div>
-      <BottomChannel buttonText={"Learn more"} pathName={"/"} />
 
     </div>
   )

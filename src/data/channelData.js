@@ -1,3 +1,5 @@
+import { metadata } from "framer-motion/client";
+
 export const channelData = [
     {
         name:"Contact",
@@ -21,6 +23,8 @@ export const channelData = [
 
         status: 'active',
 
+        buttonText: "Learn more",
+        buttonPath: '/',
     },
     {
         name: "Exedra",
@@ -32,6 +36,9 @@ export const channelData = [
         next:'/promo',
 
         status: 'active',
+
+        buttonText: "Learn more",
+        buttonPath: '/',
     },
     {
         name:"Your Name Here!",
@@ -43,6 +50,9 @@ export const channelData = [
         next:'/game',
 
         status: 'active',
+
+        buttonText: "Contact",
+        buttonPath: '/contact',
     },
     {
         name:"Game",
@@ -53,7 +63,10 @@ export const channelData = [
         prev: '/promo',
         next:'/credits',
 
-        status: 'active'
+        status: 'active',
+
+        buttonText: "Play",
+        buttonPath: '/',
     },
     {
         name:"Credits",
@@ -65,6 +78,9 @@ export const channelData = [
         next:'/',
 
         status: 'active',
+
+        buttonText: "Learn more",
+        buttonPath: '/',
     },
     {
         image: '/images/tv-static.gif',

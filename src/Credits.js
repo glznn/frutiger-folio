@@ -1,7 +1,5 @@
 import React from 'react'
 import './Credits.css'
-import SwapArrow from './components/SwapArrow.js'
-import BottomChannel from './components/BottomChannel.js'
 import { motion } from 'framer-motion'
 
 function Credits() {
@@ -118,8 +116,6 @@ function Credits() {
           </motion.div>
         </div>
     </div>
-    <SwapArrow />
-    <BottomChannel buttonText={"Learn more"} pathName={"/"} />
     </>
   )
 }

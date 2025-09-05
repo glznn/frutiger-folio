@@ -1,7 +1,5 @@
 import React from 'react'
 import './Promo.css'
-
-import BottomChannel from './components/BottomChannel'
 import { motion } from 'framer-motion'
 
 function Promo() {
@@ -17,8 +15,7 @@ function Promo() {
       <SlidingText time="43" begin="-100%" end="0"/>
       <SlidingText time="44" begin="0" end="-100%"/>
       <SlidingText time="45" begin="-100%" end="0"/>
-      
-      <BottomChannel buttonText={"Contact"} pathName={'/contact'}/>
+  
     </div>
   )
 }

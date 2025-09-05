@@ -1,5 +1,4 @@
 import React from 'react'
-import BottomChannel from './components/BottomChannel'
 
 function Game() {
 
@@ -8,7 +7,6 @@ function Game() {
   return (
     <div className="Game">
 
-        <BottomChannel buttonText={"Play!"} pathName={'/'}/>
     </div>
   )
 }

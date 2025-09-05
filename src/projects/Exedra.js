@@ -1,6 +1,5 @@
 import React from 'react'
 import './Exedra.css'
-import BottomChannel from '../components/BottomChannel'
 
 function Exedra() {
 
@@ -16,9 +15,6 @@ function Exedra() {
 
         </div>
       </div>
-
-      <BottomChannel buttonText={"Learn more"} pathName={"/"} />
-
     </div>
   )
 }
