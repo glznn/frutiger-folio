@@ -1,12 +1,11 @@
 import React from 'react'
 import './Exedra.css'
-import SwapArrow from '../components/SwapArrow.js'
 import BottomChannel from '../components/BottomChannel'
 
 function Exedra() {
 
   document.title= "Project: Bis Blue"
-  
+
   return (
     <div className="Exedra">
       <div className="ex__layout">
@@ -18,7 +17,6 @@ function Exedra() {
         </div>
       </div>
 
-      <SwapArrow />
       <BottomChannel buttonText={"Learn more"} pathName={"/"} />
 
     </div>

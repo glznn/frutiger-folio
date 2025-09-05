@@ -4,12 +4,14 @@ import './index.css';
 import Directory from './Directory';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import SwapArrow from './components/SwapArrow';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Directory />
+      <SwapArrow />
     </BrowserRouter>
   </React.StrictMode>
 );

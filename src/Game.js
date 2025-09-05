@@ -1,6 +1,5 @@
 import React from 'react'
 import BottomChannel from './components/BottomChannel'
-import SwapArrow from './components/SwapArrow'
 
 function Game() {
 
@@ -9,7 +8,6 @@ function Game() {
   return (
     <div className="Game">
 
-        <SwapArrow/>
         <BottomChannel buttonText={"Play!"} pathName={'/'}/>
     </div>
   )

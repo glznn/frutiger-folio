@@ -29,17 +29,6 @@ export const channelData = [
 
         path: '/exedra',
         prev:'/bis-blue',
-        next:'/credits',
-
-        status: 'active',
-    },
-    {
-        name:"Credits",
-        text: "Credits",
-        image: '/images/credits2.png',
-
-        path: '/credits',
-        prev:'/exedra',
         next:'/promo',
 
         status: 'active',
@@ -50,7 +39,7 @@ export const channelData = [
         image: '/images/promo-preview.gif',
 
         path: '/promo',
-        prev: '/credits',
+        prev: '/exedra',
         next:'/game',
 
         status: 'active',
@@ -62,9 +51,20 @@ export const channelData = [
 
         path: '/game',
         prev: '/promo',
-        next:'/',
+        next:'/credits',
 
         status: 'active'
+    },
+    {
+        name:"Credits",
+        text: "",
+        image: '/images/credits-preview.gif',
+
+        path: '/credits',
+        prev:'/game',
+        next:'/',
+
+        status: 'active',
     },
     {
         image: '/images/tv-static.gif',

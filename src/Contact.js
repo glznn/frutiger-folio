@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Contact.css'
-import SwapArrow from './components/SwapArrow.js'
 import { ContactMe } from './Home.js'
 
 function Contact() {
@@ -19,7 +18,6 @@ function Contact() {
               })
           }/>
       </div>
-      <SwapArrow />
     </div>
   )
 }
