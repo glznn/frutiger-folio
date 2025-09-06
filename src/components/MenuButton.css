@@ -15,23 +15,24 @@
 .MenuButton {
   position: absolute;
   z-index: 10;
-  width: 25vw;
-  max-width: 330px;
-  height: 80px;
+  width: calc(2rem + 20vw);
+  min-width: 11rem;
+  height: 10vh;
   padding-top: 4px;
 
   bottom: 20%;
-  left: 50%;
+
   transform: translateX(-50%);
 
   border: rgb(113, 191, 240) solid 3px;
-  border-radius: 50px;
+  border-radius: 60px;
   box-shadow: 0px 0px 15px 10px rgb(159, 159, 159);
 
   background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
 
   font-family: 'two-weekend-bold';
-  font-size: 25px;
+  font-size: calc(1rem + 0.65vw);
+  white-space: nowrap;
   letter-spacing: 0px;
   color:rgb(73, 73, 73);
 
@@ -52,9 +53,17 @@
   background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
 }
 
+.MenuButton:hover:before {
+  opacity: 0;
+}
+
+.MenuButton:hover:after {
+  opacity: 0;
+}
+
 .MenuButton:hover {
-  width: calc(min(25vw, 330px) * 1.1);
+  width: calc(22vw * 1.1);
   cursor: pointer;
   box-shadow: 0px 0px 15px 10px rgb(159, 159, 159),
-    inset 0px 0px 10px 40px rgba(35, 125, 173, 0.200);
+    inset 0px 0px 10px 65px rgba(35, 125, 173, 0.200);
 }
