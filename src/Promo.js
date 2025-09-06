@@ -26,7 +26,7 @@ function SlidingText( { time, begin, end } ) {
       style= {{ whitespace: "nowrap" }}
       animate= {{ x: [begin, end] }}
       transition= {{ duration: time, repeat:Infinity, ease: "linear", repeatType: "loop" }}>
-      Your Name Here Your Name Here Your Name Here Your Name Here Your Name Here 
+      Your Name Here Your Name Here Your Name Here Your Name Here Your Name Here Your Name Here Your Name Here
     </motion.h1>
   )
 }
