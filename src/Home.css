@@ -1,9 +1,15 @@
 
+/*
+* --------------------------------------------------
+* Home
+* --------------------------------------------------
+*/
+
 .Home {
+  display: flex;
   position: relative;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 10rem;
   cursor:grab;
 
   /* border:rgb(52, 120, 255) 3px solid; */
@@ -16,27 +22,32 @@
   position: relative;
 }
 
-/*
-* --------------------------------------------------
-* Home
-* --------------------------------------------------
-*/
-
-.home__menu {
-  position: relative;
-  display: block;
-  justify-content: center;
-}
-
 .home__channels {
-  position: relative;
+  position: absolute;
   display: grid;
+  left: 50%;
+  transform: translateX(-52%);
   width: max-content;
+  height: 82vh;
   flex-wrap: nowrap;
   grid-template-columns: auto auto auto auto;
   list-style: none;
   gap: 0.5rem;
   margin: 0 auto;
+
+  overflow: hidden;
+}
+
+@media (max-width: 1080px) {
+  .home__channels {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__channels {
+    grid-template-columns: auto auto;
+  }
 }
 
 .home__channels h1 {
