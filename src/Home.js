@@ -54,22 +54,22 @@ function Home() {
       </div> */}
       <div className="home__bottom">
         <div className="home__leftBlock">
-          <div className="home__leftPocket"/>
-          <div className="home__leftIcon"
-            onClick={handleInfoClicked}
-          >
-            <div className="home__info">
-              <RiFileInfoFill />
+          <div className="home__leftPocket">
+            <div className="home__leftIcon"
+              onClick={handleInfoClicked}
+            >
+              <div className="home__info">
+                <RiFileInfoFill />
+              </div>
             </div>
+            {infoClicked && <FolioInfo onClose={handleInfoClicked} />}
           </div>
-          {infoClicked && <FolioInfo onClose={handleInfoClicked} />}
         </div>
         
-        <div className="home__centerBlock">
+        <div className="home__centerBlock"/>
 
-        </div>
         <div className="home__rightBlock">
-          <div className="home__rightPocket"/>
+          <div className="home__rightPocket">
             <div className="home__rightIcon"
               onClick={handleMailClick}
             >
@@ -78,6 +78,7 @@ function Home() {
               </div>
             </div>
             {mailClicked && <ContactMe onClose={handleMailClick} />}
+          </div>
         </div>
       </div>
     </div>

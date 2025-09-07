@@ -3,13 +3,13 @@
   position: absolute;
   z-index: -1;
 
-  top: 8px;
+  top: 6px;
   left: 20px;
-  height: 45%;
+  height: 50%;
   width: calc(100% - 155px);  
 
   border-radius: 10px;
-  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+  background: linear-gradient(rgba(255, 255, 255, 0.556), rgba(255,255,255,0.2));
 }
 
 .MenuButton {
@@ -53,13 +53,13 @@
   background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
 }
 
-.MenuButton:hover:before {
+/* .MenuButton:hover:before {
   opacity: 0;
 }
 
 .MenuButton:hover:after {
   opacity: 0;
-}
+} */
 
 .MenuButton:hover {
   width: calc(22vw * 1.1);

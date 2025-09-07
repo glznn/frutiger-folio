@@ -144,8 +144,8 @@
   position: absolute;
   background:rgb(175, 174, 174);
   bottom: 19%;
-  width: 32vw;
-  min-width: 300px;
+  width: 23vw;
+  min-width: 250px;
   height: 150px;
   border-top: 4px solid rgb(113, 191, 240);
 }
@@ -176,13 +176,13 @@
   border-top-left-radius: 150px;
   border-left: 0.09rem solid rgb(175, 174, 174);
   box-shadow: inset -20px 15px 30px rgba(128, 128, 128, 0.766);
-
 }
 
 .home__rightPocket, .home__leftPocket {
   position: absolute;
   background-image: linear-gradient(rgba(128, 128, 128, 0.50), rgba(255, 255, 255, 0.222), rgba(128, 128, 128, 0.50));
-  width: 230px;
+  width: 18vw;
+  min-width: 175px;
   height: 135px;
 }
 
@@ -190,9 +190,9 @@
   box-shadow: inset 20px 10px 20px rgba(255, 255, 255, 0.59);
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
-  border-top: solid rgba(75, 75, 75, 0.277) 5px;
-  border-left: solid rgba(75, 75, 75, 0.277) 5px;
-  border-bottom: solid rgba(75, 75, 75, 0.277) 5px;
+  border-top: solid rgba(75, 75, 75, 0.277) 4px;
+  border-left: solid rgba(75, 75, 75, 0.277) 4px;
+  border-bottom: solid rgba(75, 75, 75, 0.277) 4px;
   bottom: 2.5%;
   right: 0%;
 }
@@ -201,19 +201,19 @@
   box-shadow: inset -20px 10px 20px rgba(255, 255, 255, 0.59);
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
-  border-top: solid rgba(75, 75, 75, 0.277) 5px;
-  border-right: solid rgba(75, 75, 75, 0.277) 5px;
-  border-bottom: solid rgba(75, 75, 75, 0.277) 5px;
+  border-top: solid rgba(75, 75, 75, 0.277) 4px;
+  border-right: solid rgba(75, 75, 75, 0.277) 4px;
+  border-bottom: solid rgba(75, 75, 75, 0.277) 4px;
   bottom: 2.5%;
   left: 0%;
 }
 
 .home__rightIcon, .home__leftIcon {
-  position: absolute;
+  position:sticky;
   padding: 0.5rem;
   background-image: linear-gradient(to left, rgba(128, 128, 128, 0.588), white);
   background-color: white;
-  bottom: 11%;
+  
   border-radius: 100px;
   height:100px;
   width:100px;
@@ -232,11 +232,15 @@
 }
 
 .home__rightIcon {
-  right: 95px;
+  right: 100%;
+  margin-left: 8px;
+  margin-top: 3.5px;
 }
 
 .home__leftIcon {
-  left: 95px;
+  left: 100%;
+  margin-right: 8px;
+  margin-top: 3.5px;
 }
 
 .home__rightIcon:after, .home__leftIcon:after {
