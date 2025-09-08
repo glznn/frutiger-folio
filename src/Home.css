@@ -194,7 +194,7 @@
 .home__rightPocket, .home__leftPocket {
   position: absolute;
   background-image: linear-gradient(rgba(128, 128, 128, 0.50), rgba(255, 255, 255, 0.222), rgba(128, 128, 128, 0.50));
-  width: 18vw;
+  width: calc(5vw + 8rem);
   min-width: 175px;
   height: 135px;
 }
