@@ -9,6 +9,12 @@
   /* view-transition-name: root; */
 }
 
+@media (max-width: 600px) {
+  :root {
+    background-size: 47vw;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

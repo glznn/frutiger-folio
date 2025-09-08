@@ -163,7 +163,7 @@
   border-top: 4px solid rgb(113, 191, 240);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .home__leftBlock, .home__rightBlock {
     min-width: 14.5rem;
   }
@@ -185,8 +185,8 @@
 
 .home__leftBlock {
   left: 0%;
-  border-top-right-radius: 200px;
-  border-right: 0.08rem solid rgb(173, 171, 171);
+  border-top-right-radius: 150px;
+  border-right: 0.09rem solid rgb(173, 171, 171);
   box-shadow: inset 20px 15px 30px rgba(128, 128, 128, 0.766);
 }
 
@@ -446,7 +446,7 @@
   align-self: center;
 
   padding-left: 1rem;
-  font-size: min(1.5vw, 15px);
+  font-size: max(min(1vw, 28px), 8px);
   width: fit-content;
 }
 
@@ -490,9 +490,10 @@
 
   background: transparent;
   font-family: 'two-weekend-bolder';
-  font-size: min(1.5vw, 15px);
+  font-size: max(min(1vw, 28px), 8px);
   color: rgba(0, 0, 0, 0.677);
   align-self: center;
+  text-align: center;
 }
 
 #name {
@@ -511,7 +512,7 @@
 }
 
 .contact__message h1 {
-  font-size: min(1.5vw, 15px);
+  font-size: max(min(1vw, 28px), 8px);
   padding-left: 1rem;
 }
 
@@ -530,7 +531,7 @@
 
   background: transparent;
   font-family: 'two-weekend';
-  font-size: min(1.5vw, 15px);
+  font-size: max(min(1vw, 28px), 8px);
   color: gray;
   text-shadow: 0.5px 1px black;
 }
