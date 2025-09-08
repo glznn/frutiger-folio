@@ -163,6 +163,12 @@
   border-top: 4px solid rgb(113, 191, 240);
 }
 
+@media (max-width: 600px) {
+  .home__leftBlock, .home__rightBlock {
+    min-width: 14.5rem;
+  }
+}
+
 .home__bottom {
   position: fixed;
   bottom: 0px;
