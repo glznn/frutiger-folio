@@ -66,7 +66,7 @@ function Home() {
                 <RiFileInfoFill />
               </div>
             </div>
-            {infoClicked && <FolioInfo onClose={handleInfoClicked} />}
+            <FolioInfo onClose={handleInfoClicked} visible={infoClicked} />
           </div>
         </div>
         
@@ -200,9 +200,16 @@ export function ContactMe({ onClose }) {
   )
 }
 
-function FolioInfo({ onClose }) {
+function FolioInfo({ onClose, visible }) {
   return (
-    <div className="info__background">
+    <div className="info__background" 
+      style={{ 
+        opacity: visible ? 0 : 1,
+        top: visible ? '100vh': '0px',
+        borderTopLeftRadius: visible ? '10000px' : '0px',
+        borderTopRightRadius: visible ? '10000px' : '0px',
+      }}
+    >
       <div className="info__message">
         <h1>
           PORTFOLIO BY GLENN MONTEPIEDRA.
