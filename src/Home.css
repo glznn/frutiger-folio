@@ -28,7 +28,7 @@
   left: 50%;
   transform: translateX(-52%);
   width: max-content;
-  height: max-content;
+  /* height: max-content; */
   flex-wrap: nowrap;
   grid-template-columns: auto auto auto auto;
   list-style: none;
