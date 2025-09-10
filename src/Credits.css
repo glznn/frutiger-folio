@@ -1,7 +1,7 @@
 .Credits {
     position: relative;
     display: flex;
-    height: 80vh;
+    height: 80%;
 
     justify-content: center;
     align-items: center;
@@ -59,6 +59,13 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
+}
+
+@media (max-width: 850px) {
+    .credits__layout {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .credits__header {
