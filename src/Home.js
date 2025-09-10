@@ -16,12 +16,23 @@ function Home() {
   
   const [mailClicked, setMailClicked] = useState(false);
   const [infoClicked, setInfoClicked] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
+
+  useEffect(() => {
+    const alreadyVisited = localStorage.getItem("hasVisitedHome");
+
+    if (!alreadyVisited) {
+      setInfoClicked(true);
+      localStorage.setItem("hasVisitedHome", "true");
+    }
+  }, [])
 
   const handleMailClick = () => {
     setMailClicked(prev => !prev);
   }
 
   const handleInfoClicked = () => {
+    setTimeout(() => setShowInfo(prev => !prev), 500);
     setInfoClicked(prev => !prev);
   }
 
@@ -66,7 +77,7 @@ function Home() {
                 <RiFileInfoFill />
               </div>
             </div>
-            <FolioInfo onClose={handleInfoClicked} visible={infoClicked} />
+            {showInfo && <FolioInfo onClose={handleInfoClicked} visible={infoClicked} />}
           </div>
         </div>
         
@@ -204,10 +215,10 @@ function FolioInfo({ onClose, visible }) {
   return (
     <div className="info__background" 
       style={{ 
-        opacity: visible ? 0 : 1,
-        top: visible ? '100vh': '0px',
-        borderTopLeftRadius: visible ? '10000px' : '0px',
-        borderTopRightRadius: visible ? '10000px' : '0px',
+        opacity: visible ? 1 : 0,
+        top: visible ? '0px': '100vh',
+        borderTopLeftRadius: visible ? '0px' : '10000px',
+        borderTopRightRadius: visible ? '0px' : '10000px',
       }}
     >
       <div className="info__message">

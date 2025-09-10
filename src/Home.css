@@ -304,7 +304,7 @@
   color:white;
   background-color: black;
 
-  transition: all  1s, border-radius ease-in-out 0.75s;
+  transition: all ease-in-out 1s, border-radius ease-in-out 1s;
 }
 
 .info__message {
