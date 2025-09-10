@@ -29,16 +29,16 @@ function Credits() {
 
                 Routing
                 <span id="by">by</span>
-                <a href="https://motion.dev/"
+                <a href="https://reactrouter.com/"
                 target='_blank'>
-                Framer Motion</a>
+                React Router</a>
                 <br/>
 
                 Route Animations
                 <span id="by">by</span>
-                <a href="https://reactrouter.com/"
+                <a href="https://motion.dev/"
                 target='_blank'>
-                React Router</a>
+                Framer Motion</a>
                 <br/>
 
                 <a href="https://react-icons.github.io/react-icons/search/#q=FaCaret"
