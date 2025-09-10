@@ -8,7 +8,7 @@ export const TransitionHandler = ( {children} ) => {
     const previousLocation = usePreviousRoute();
 
     const getTransition = (from, to) => {
-        if (!from || !to) return 'fade-into';
+        if (!from || !to) return 'none';
         if (from.pathname === '/') return 'none';
         if (to.pathname === '/') return 'fade-into';
         

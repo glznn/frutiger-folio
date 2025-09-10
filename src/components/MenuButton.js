@@ -10,9 +10,15 @@ function MenuButton( {text, path} ) {
   return (
     <button className="MenuButton"
     onClick={() => {
-        document.startViewTransition(() => {
-        navigate(path);
-      });
+        if (typeof document !== 'undefined' && 'startViewTransition' in document)
+        {
+          document.startViewTransition(() => {
+          navigate(path);
+          });
+        }
+        else {
+          navigate(path);
+        }
     }}
     >   {text}    </button>
   )

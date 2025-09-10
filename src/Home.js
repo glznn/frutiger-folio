@@ -36,9 +36,13 @@ function Home() {
                 className="home__channel"
                 
                 onClick={() => {
+                  if (typeof document !== 'undefined' && 'startViewTransition' in document) {
                   document.startViewTransition(() => {
-                    navigate(`${channel.path}`);
-                  })
+                    navigate(channel.path);
+                  })}
+                  else {
+                    navigate(channel.path);
+                  }
                 }}
               >
                 <img id={channel.status} src={channel.image} loading="lazy"/>

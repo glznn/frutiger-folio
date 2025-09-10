@@ -13,9 +13,14 @@ function SwapArrow() {
     <div className="SwapArrow">
         <div className="swap__left"
             onClick={ () => {
-                document.startViewTransition(() => {
+                if (typeof document !== 'null' && 'startViewTransition' in document) {
+                    document.startViewTransition(() => {
+                        navigate(channelData[index].prev)
+                    })
+                }
+                else {
                     navigate(channelData[index].prev)
-                })
+                }
             }}
         >
             <FaCaretLeft />
@@ -27,9 +32,14 @@ function SwapArrow() {
 
         <div className="swap__right"
             onClick={ () => {
-                document.startViewTransition(() => {
+                if (typeof document !== 'null' && 'startViewTransition' in document) {
+                    document.startViewTransition(() => {
+                        navigate(channelData[index].next)
+                    })
+                }
+                else {
                     navigate(channelData[index].next)
-                })
+                }
             }}
         >
             <FaCaretRight />

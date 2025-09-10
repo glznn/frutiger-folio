@@ -370,9 +370,10 @@
   z-index: 100;
   width: 50%;
   height: 90%;
+  min-height: 300px;
   left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  top: 20px;
+  transform: translateX(-50%);
   opacity: 1;
 
   background-color: black;
@@ -442,6 +443,7 @@
   top: -0.75rem;
   width: 48vw;
   height: 6vh;
+  min-height: 20px;
   border-radius: 20px;
   
   border: rgb(113, 191, 240) 4px solid;
@@ -544,8 +546,9 @@
 }
 
 .contact__bottom {
-  position: relative;
   align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .contact__submit:before {
@@ -579,7 +582,8 @@
   background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
 
   font-family: 'two-weekend-bold';
-  font-size: min(2vw, 40px);
+  font-size: calc(0.5rem + 0.65vw);
+
   color:rgb(73, 73, 73);
 
   transition: box-shadow ease-in-out 0.35s;
