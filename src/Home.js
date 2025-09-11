@@ -213,26 +213,28 @@ export function ContactMe({ onClose }) {
 
 function FolioInfo({ onClose, visible }) {
   return (
-    <div className="info__background" 
-      style={{ 
-        opacity: visible ? 1 : 0,
-        top: visible ? '0px': '100vh',
-        borderTopLeftRadius: visible ? '0px' : '10000px',
-        borderTopRightRadius: visible ? '0px' : '10000px',
-      }}
-    >
-      <div className="info__message">
-        <h1>
-          PORTFOLIO BY GLENN MONTEPIEDRA.
-          <br/>
-          BROWSE CHANNELS TO EXPLORE
-          <br/><br/><br/><br/><br/>
-          CLICK TO CONTINUE.
-        </h1>
-      </div>
-      <div className="info__exit" 
-      onClick={onClose}>
-        <h1 className="info__exitIcon"> <LuSquareX /> </h1>
+    <div className="Info">
+      <div className="info__content" 
+        style={{ 
+          opacity: visible ? 1 : 0,
+          top: visible ? '0px': '100vh',
+          borderTopLeftRadius: visible ? '0px' : '10000px',
+          borderTopRightRadius: visible ? '0px' : '10000px',
+        }}
+      >
+        <div className="info__topBorder"/>
+        <div className="info__message">
+          <h1>
+            Glenn Montepiedra's Portfolio
+            <br/>
+            Browse channels to explore.
+            <br/><br/><br/>
+            <text onClick={onClose}>
+              Click here to continue.
+            </text>
+          </h1>
+        </div>
+        <div className="info__bottomBorder"/>
       </div>
     </div>
   )
