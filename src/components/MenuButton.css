@@ -18,6 +18,7 @@
   width: calc(2rem + 20vw);
   min-width: 9rem;
   height: 10vh;
+  min-height: 2rem;
   padding-top: 4px;
 
   bottom: 20%;

@@ -342,7 +342,7 @@
   left: 0px;
   width: 100%;
   height: 4%;
-  background-color:rgb(156, 156, 156);
+  background-color:rgba(156, 156, 156, 0.756);
 }
 
 .info__message {
@@ -360,9 +360,17 @@
   white-space: nowrap;
 }
 
+@media (max-width: 600px) {
+  .info__message h1 {
+    font-size: 1.6rem;
+    letter-spacing: -2.5px;
+  }
+}
+
 .info__message text {
   font-weight: 400;
   color: rgb(77, 174, 223);
+  -webkit-text-stroke: rgba(255, 255, 255, 0.703) 0.2px;
   cursor:pointer;
 }
 

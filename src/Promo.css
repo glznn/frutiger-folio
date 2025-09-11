@@ -22,3 +22,10 @@
     text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
+@media (max-width: 600px) {
+    .promo__text {
+        margin-top: 15px;
+        font-size: 75px;
+    }
+}
+
