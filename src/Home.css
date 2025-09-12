@@ -233,6 +233,7 @@
 }
 
 .home__rightIcon, .home__leftIcon {
+  font-family: 'spectral';
   position:sticky;
   padding: 0.5rem;
   background-image: linear-gradient(to left, rgba(128, 128, 128, 0.588), white);
@@ -280,10 +281,12 @@
 }
 
 .home__info {
+  padding-top: 3px;
   color: gray;
 }
 
 .home__mail {
+  padding-top: 3px;
   color: rgb(128, 128, 128);
 }
 
