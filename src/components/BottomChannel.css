@@ -32,3 +32,13 @@
     left: 68vw;
     bottom: 20%;
 }
+
+@media (max-width: 600px) {
+    .bottomChannel__menu {
+        left: 28vw;
+    }
+
+    .bottomChannel__viewMore {
+        left: 72vw
+    }
+}

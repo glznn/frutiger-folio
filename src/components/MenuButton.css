@@ -16,7 +16,7 @@
   position: absolute;
   z-index: 10;
   width: calc(2rem + 20vw);
-  min-width: 9rem;
+  min-width: 11rem;
   height: 10vh;
   min-height: 2rem;
   padding-top: 4px;
@@ -56,6 +56,7 @@
 
 .MenuButton:hover {
   width: calc(calc(2rem + 20vw) * 1.15);
+  min-width: calc(11rem * 1.15);
   height: calc(10vh * 1.15);
   cursor: pointer;
   box-shadow: 0px 0px 15px 10px rgb(159, 159, 159),

@@ -449,11 +449,20 @@
   box-shadow: 0 0 0 4px white;
 }
 
+@media (max-width: 600px) {
+  .contact__me {
+    top: 44px;
+  }
+}
+
 .contact__exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 101;
-  right: 8vw;
-  top: 2.5vh;
+  right: 8%;
+  top: 2.5%;
   background: radial-gradient(white, lightgray, gray);
   width: 68px;
   height: 68px;
@@ -466,14 +475,26 @@
   transition: box-shadow ease-in-out 0.35s;
 }
 
+@media (max-width: 600px) {
+  .contact__exit {
+    top: 3%;
+    right: 4%;
+  }
+}
+
+.contact__exit h1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+}
+
 .contact__exitIcon, .contact__homeIcon {
-  margin-top: 16px;
+  padding-top: 2px;
   font-size: 40px;
   text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.263);
 }
 
 .contact__homeIcon {
-  margin-top: 8px;
+  padding-top: 10px;
   font-size: 50px;
 }
 
@@ -513,10 +534,10 @@
   position: relative;
   z-index: 2;
   align-self: center;
-
-  padding-left: 1rem;
+  padding-left: 5px;
   font-size: max(min(1vw, 28px), 8px);
   width: fit-content;
+  cursor: default;
 }
 
 #message {
@@ -541,15 +562,15 @@
   content:'';
   position: absolute;
   z-index: 0;
-  top: 2px;
-  left: 0px;
-  width: calc(100% - 4px);
+  top: 5px;
+  left: 8px;
+  width: calc(100% - 10px);
   height: 50%;
   border-radius: 10px;
   background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,0.2));
 }
 
-.contact__field, .contact__fieldMail {
+.contact__fieldName, .contact__fieldMail {
   position: absolute;
   height:inherit;
   z-index: 3;
@@ -562,17 +583,17 @@
   font-size: max(min(1vw, 28px), 8px);
   color: rgba(0, 0, 0, 0.677);
   align-self: center;
-  text-align: center;
+  text-align: center; 
 }
 
 #name {
   width: 35vw;
-  padding-left: calc(5vw + 20px + 1rem);
+  margin-left: calc(5vw + 20px);
 }
 
 .contact__fieldMail {
   width: 25vw;
-  padding-left: min(calc(7vw + 6.5rem), 20vw);
+  margin-left: min(calc(7vw + 3.5rem), 20vw);
 }
 
 .contact__message {
@@ -581,15 +602,15 @@
 }
 
 .contact__message h1 {
-  font-size: max(min(1vw, 28px), 8px);
-  padding-left: 1rem;
+  font-size: max(min(1vw, 28px), 12px);
+  padding-left: 5px;
 }
 
 .contact__messageField {
   position:absolute;
   left: 50%;
   transform: translateX(-50%);  
-  padding-top: 7vh;
+  margin-top: 7vh;
   width: 42vw;
   height: 30vh;
 
@@ -600,9 +621,9 @@
 
   background: transparent;
   font-family: 'two-weekend';
-  font-size: max(min(1vw, 28px), 8px);
+  font-size: max(min(1vw, 28px), 12px);
   color: gray;
-  text-shadow: 0.5px 1px black;
+  text-shadow: 0.5px 0.75px black;
 }
 
 .contact__bottom {

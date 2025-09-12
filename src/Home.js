@@ -172,12 +172,12 @@ export function ContactMe({ onClose }) {
         <br/><br/><br/> 
           <div className="contact__form"> 
             <h1> ‎ ‎ Name: </h1> 
-            <input className="contact__field" 
+            <input className="contact__fieldName" 
             type="text"
             id="name" 
             name="name"
             placeholder="" 
-            autoComplete='off' 
+            autoComplete='dont-fill-me-pls' 
             required/> 
           </div>
         <br/><br/><br/>
