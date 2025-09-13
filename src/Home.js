@@ -18,11 +18,14 @@ function Home() {
   const [showInfo, setShowInfo] = useState(false);
 
   useEffect(() => {
-    const alreadyVisited = localStorage.getItem("hasVisitedHome");
+    const alreadyVisited = sessionStorage.getItem("hasVisitedHome");
 
-    if (!alreadyVisited) {
+    if (alreadyVisited !== "true") {
+      setShowInfo(true);
       setInfoClicked(true);
-      localStorage.setItem("hasVisitedHome", "true");
+
+      /* Local / Session storage only stores strings!!!!!!!!*/
+      sessionStorage.setItem("hasVisitedHome", "true");
     }
   }, [])
 
@@ -77,6 +80,8 @@ function Home() {
               </div>
             </div>
             {showInfo && <FolioInfo onClose={handleInfoClicked} visible={infoClicked} />}
+            {console.log(showInfo)}
+            {console.log(infoClicked)}
           </div>
         </div>
         
