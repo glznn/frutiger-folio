@@ -13,7 +13,7 @@ function Contact() {
     <div className="Contact">
       <div className="contact__layout">
           <ContactMe onClose={() => {
-            if (typeof document !== 'null' && 'startViewTransition' in document) {
+            if (typeof document !== 'undefined' && 'startViewTransition' in document) {
               document.startViewTransition(() => {
                 navigate('/');
               })

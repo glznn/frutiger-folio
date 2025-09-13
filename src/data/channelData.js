@@ -1,5 +1,3 @@
-import { metadata } from "framer-motion/client";
-
 export const channelData = [
     {
         name:"Contact",

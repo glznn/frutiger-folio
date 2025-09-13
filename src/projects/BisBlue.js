@@ -12,7 +12,7 @@ function BisBlue() {
           <a href="http://bisblue.com"
           target="_blank"
           >
-            <img src="/images/bis-blue-preview.png"/>
+            <img src="/images/bis-blue-preview.png" alt="Bis Blue"/>
           </a>
         </div>
         <div className="bb__content">

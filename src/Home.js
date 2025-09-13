@@ -2,7 +2,6 @@ import './Home.css';
 import { channelData } from './data/channelData.js';
 import { GrMail } from "react-icons/gr";
 import { RiFileInfoFill } from "react-icons/ri";
-import { LuSquareX } from "react-icons/lu";
 import { MdHome } from "react-icons/md";
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -56,7 +55,7 @@ function Home() {
                   }
                 }}
               >
-                <img id={channel.status} src={channel.image} loading="lazy"/>
+                <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>
                 <h1 className="home__channelName">{channel.text}</h1>
               </li>
             )

@@ -9,7 +9,7 @@ function Exedra() {
     <div className="Exedra">
       <div className="ex__layout">
         <div className="ex__image">
-          <img src="/images/exedra-preview.png"/>
+          <img src="/images/exedra-preview.png" alt="Exedra"/>
         </div>
         <div className="ex__content">
 
