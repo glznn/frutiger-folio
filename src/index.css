@@ -5,6 +5,7 @@
   background-blend-mode:color;
   overflow-x: hidden;
   overflow-y: hidden;
+  cursor: grab;
 
   /* view-transition-name: root; */
 }

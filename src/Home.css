@@ -328,6 +328,13 @@
   transition: all ease-in-out 1s, border-radius ease-in-out 1s;
 }
 
+@media (orientation: portrait) {
+  .info__content {
+    transform: translateX(-50%) translateY(30%);
+    height: 60%;
+  }
+}
+
 @media (max-width: 600px) {
   .info__content {
     background-size: 47vw;
@@ -540,7 +547,6 @@
   padding-left: 5px;
   font-size: max(min(1vw, 28px), 8px);
   width: fit-content;
-  cursor: default;
 }
 
 #message {
