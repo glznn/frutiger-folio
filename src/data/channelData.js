@@ -27,7 +27,7 @@ export const channelData = [
     {
         name: "Exedra",
         text: "",
-        image: '/images/exedra-preview.gif',
+        image: '/images/exedra-preview.png',
 
         path: '/exedra',
         prev:'/bis-blue',
