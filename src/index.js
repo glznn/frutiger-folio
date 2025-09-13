@@ -28,7 +28,7 @@ function HasFooter() {
   const location = useLocation();
   const index = findChannelIndex(location.pathname);
   if (location.pathname === '/' || location.pathname === '/contact') return null;
-  return <BottomChannel buttonText={channelData[index].buttonText} pathName={channelData[index].buttonPath}/>;
+  return <BottomChannel buttonText={channelData[index].buttonText} link={channelData[index].buttonPath}/>;
 }
 
 function HasSwapArrow() {

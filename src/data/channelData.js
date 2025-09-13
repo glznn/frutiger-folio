@@ -21,8 +21,8 @@ export const channelData = [
 
         status: 'active',
 
-        buttonText: "Learn more",
-        buttonPath: '/',
+        buttonText: "Visit Site",
+        buttonPath: 'https://bisblue.com',
     },
     {
         name: "Exedra",
@@ -35,8 +35,8 @@ export const channelData = [
 
         status: 'active',
 
-        buttonText: "Learn more",
-        buttonPath: '/',
+        buttonText: "Visit Site",
+        buttonPath: 'https://exedra.app',
     },
     {
         name:"Your Name Here!",

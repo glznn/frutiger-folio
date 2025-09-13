@@ -3,23 +3,29 @@ import React from 'react'
 import './MenuButton.css'
 import { useNavigate } from 'react-router-dom'
 
-function MenuButton( {text, path} ) {
+function MenuButton( {text, link} ) {
 
   const navigate = useNavigate();
 
   return (
     <button className="MenuButton"
     onClick={() => {
-        if (typeof document !== 'undefined' && 'startViewTransition' in document)
-        {
-          document.startViewTransition(() => {
-          navigate(path);
-          });
+        if (link.substring(0,1) === '/') {
+          if (typeof document !== 'undefined' && 'startViewTransition' in document)
+          {
+            document.startViewTransition(() => {
+            navigate(link);
+            });
+          }
+          else {
+            navigate(link);
+          }
         }
         else {
-          navigate(path);
+          window.open(link, "_blank");
         }
-    }}
+      }
+    }
     >   {text}    </button>
   )
 }
