@@ -13,7 +13,7 @@ function SwapArrow() {
     <div className="SwapArrow">
         <div className="swap__left"
             onClick={ () => {
-                if (typeof document !== 'null' && 'startViewTransition' in document) {
+                if (typeof document !== 'undefined' && 'startViewTransition' in document) {
                     document.startViewTransition(() => {
                         navigate(channelData[index].prev)
                     })
@@ -32,7 +32,7 @@ function SwapArrow() {
 
         <div className="swap__right"
             onClick={ () => {
-                if (typeof document !== 'null' && 'startViewTransition' in document) {
+                if (typeof document !== 'undefined' && 'startViewTransition' in document) {
                     document.startViewTransition(() => {
                         navigate(channelData[index].next)
                     })

@@ -19,7 +19,9 @@ function Credits() {
               <div className="credits__title">  Credits   </div>
               Created using‎  ‎
               <a href="https://react.dev/"
-              target='_blank'>
+              target='_blank'
+              rel="noreferrer"
+              >
               React.js</a>
               <br/>
             </div>
@@ -30,43 +32,57 @@ function Credits() {
                 Routing
                 <span id="by">by</span>
                 <a href="https://reactrouter.com/"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 React Router</a>
                 <br/>
 
                 Route Animations
                 <span id="by">by</span>
                 <a href="https://motion.dev/"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Framer Motion</a>
                 <br/>
 
                 <a href="https://react-icons.github.io/react-icons/search/#q=FaCaret"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Arrow</a> 
                 ‎ ‎ ‎
 
                 <a href="https://react-icons.github.io/react-icons/search/#q=grmail"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Mail</a> 
                 ‎ ‎ ‎
 
                 <a href="https://react-icons.github.io/react-icons/search/#q=RiFileInfo"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Info</a>
                 ‎ ‎
                 
                 Icons
                 <span id="by">by</span> 
                 <a href="https://react-icons.github.io/react-icons/"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 React Icons</a> 
                 <br/>
 
                 Form Submission Alert 
                 <span id="by">by</span> 
                 <a href="https://sweetalert2.github.io/"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Sweet Alert</a> 
                 <br/>
 
@@ -75,29 +91,41 @@ function Credits() {
                 <h1>Assets</h1>
 
                 <a href="https://pixabay.com/gifs/noise-frequency-sound-noisy-tv-18561/"
-                target='_blank'> 
+                target='_blank'
+                rel="noreferrer"
+                > 
                 Tv-Static gif</a>
                 <span id="by">by</span>
                 <a href="https://www.psd-dude.com/"
-                target='_blank'> 
+                target='_blank'
+                rel="noreferrer"
+                > 
                 Psddude</a> 
                 <br/>
 
                 <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-wall-FiGg-MpiA3o"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Analog image</a> 
                 <span id="by">by</span>
                 <a href="https://unsplash.com/@bernardhermant"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Bernard Hermant</a>
                 <br/>
 
                 <a href="https://fontesk.com/two-weekends-sans-font/"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 Two Weekends Sans Font</a>
                 <span id="by">by</span>
                 <a href="https://github.com/AlphaZTX"
-                target='_blank'>
+                target='_blank'
+                rel="noreferrer"
+                >
                 T. X. Zhang</a>
                 <br/>
               </div>
@@ -107,7 +135,9 @@ function Credits() {
               Portfolio Design inspired
               <span id="by">by</span> 
               <a href="https://wii.fandom.com/wiki/Wii_Menu"
-              target='_blank'>
+              target='_blank'
+              rel="noreferrer"
+              >
               Ninendo Wii Menu</a>
               <br/>
               
