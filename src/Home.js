@@ -80,8 +80,6 @@ function Home() {
               </div>
             </div>
             {showInfo && <FolioInfo onClose={handleInfoClicked} visible={infoClicked} />}
-            {console.log(showInfo)}
-            {console.log(infoClicked)}
           </div>
         </div>
         

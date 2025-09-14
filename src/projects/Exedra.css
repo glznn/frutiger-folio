@@ -4,31 +4,42 @@
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     box-shadow: 0 0 0 8px rgb(166, 166, 166);
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.ex__layout {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .ex__image {
-    position: absolute;
-    left: 25%;
+    position: relative;
     top: 0px;
-    transform: translateX(-30%);
+    padding-top: 3px;
 }
 
 .ex__image img {
-    height: calc(80vh - 5px);
+    height: calc(80vh - 8px);
+    width:50vw;
     object-fit: cover;
 }
 
 .ex__content {
-    position: absolute;
+    position: relative;
     top: 0px;
-    right: 10%;
+    right: 5%;
     color:white;
     text-align: right;
     width: 30vw;
+    padding-left: 10vw;
     height: calc(80vh - 5px);
     outline: solid red 2px;
     align-content: center;
     font-size: 15px;
     font-family: 'spectral';
+}
+
+.ex__content h1 {
+    font-weight: 100;
+    letter-spacing: -1px;
 }
