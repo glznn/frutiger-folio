@@ -1,6 +1,7 @@
 .SwapArrow {
     font-size: 100px;
     color:  rgb(113, 191, 240);
+    font-family: 'spectral';
 }
 
 .swap__left, .swap__right {
@@ -33,7 +34,7 @@
     position: absolute;
     content:'';
     z-index: 0;
-    bottom: 53px;
+    bottom: 75px;
     left: 42px;
     width: 8px;
     height: 22px;
