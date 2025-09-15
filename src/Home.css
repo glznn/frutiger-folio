@@ -782,6 +782,10 @@
 }
 
 @media (min-height: 1000px) {
+  .contact__me {
+    padding-top: 3rem;
+  }
+
   .contact__submit::before {
     border-radius: 20px;
     top: 8px;
