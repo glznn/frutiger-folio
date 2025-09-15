@@ -16,6 +16,13 @@
     }
 }
 
+@media (min-width: 2000px) {
+    .Contact {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+}
+
 .contact__layout {
     position: absolute;
     z-index: 0;

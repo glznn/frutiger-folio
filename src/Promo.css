@@ -18,6 +18,13 @@
     }
 }
 
+@media (min-width: 2000px) {
+    .Promo {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+}
+
 .promo__text {
     font-family: 'two-weekend-bold';
     /* font-size: 90px; */

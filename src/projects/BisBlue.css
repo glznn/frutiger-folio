@@ -20,6 +20,13 @@
     }
 }
 
+@media (min-width: 2000px) {
+    .BisBlue {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+}
+
 .bb__layout {
     display: flex;
     justify-content: space-evenly;

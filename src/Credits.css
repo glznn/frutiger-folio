@@ -22,6 +22,14 @@
     }
 }
 
+@media (min-width: 2000px) {
+    .Credits {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+}
+
+
 .credits__content {
     background-color: rgba(0, 0, 0, 0.95);
     color:white;

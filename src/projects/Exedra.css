@@ -14,6 +14,14 @@
     }
 }
 
+@media (min-width: 2000px) {
+    .Exedra {
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+}
+
+
 .ex__layout {
     display: flex;
     justify-content: space-evenly;
