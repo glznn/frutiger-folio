@@ -784,14 +784,17 @@
 @media (min-height: 1000px) {
   .contact__submit::before {
     border-radius: 20px;
+    top: 8px;
   }
 
   .contact__submit {
     border-radius: 50px;
+    font-size: max(min(1vw, 25px), 28px);
   }
 
   .contact__submit::after {
     border-radius: 20px;
+    bottom: 10px;
   }
 
   .contact__submit:hover {
@@ -804,6 +807,16 @@
   .contact__submit:hover {
     box-shadow: 0px 0px 15px 10px rgba(159, 159, 159, 0),
     inset 0px 0px 10px 70px rgba(35, 125, 173, 0.200);
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact__submit:before  {
+    width: calc(100% - 9vw);  
+  }
+
+  .contact__submit:after  {
+    width: calc(100% - 5vw);  
   }
 }
 
