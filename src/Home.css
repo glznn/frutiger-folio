@@ -735,6 +735,10 @@
   background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
 }
 
+.contact__submit:hover::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.071), rgba(255,255,255,0.2));
+}
+
 .contact__submit {
   width: calc(2rem + 20vw);
   min-width: 11rem;
@@ -771,6 +775,10 @@
 
   border-radius: 10px;
   background: linear-gradient(rgba(86, 86, 86, 0.093), rgba(104, 104, 104, 0.082));
+}
+
+.contact__submit:hover::after {
+  background: linear-gradient(rgba(86, 86, 86, 0.077), rgba(104, 104, 104, 0.038));
 }
 
 .contact__submit:hover {
