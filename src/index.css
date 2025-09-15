@@ -10,7 +10,7 @@
   /* view-transition-name: root; */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 600px) {
   :root {
     background-size: 47vw;
   }

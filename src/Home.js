@@ -222,6 +222,7 @@ function FolioInfo({ onClose, visible }) {
           top: visible ? '0px': '100vh',
           borderTopLeftRadius: visible ? '0px' : '10000px',
           borderTopRightRadius: visible ? '0px' : '10000px',
+          filter: visible ? '' : 'blur(100px)'
         }}
       >
         <div className="info__topBorder"/>
@@ -229,11 +230,13 @@ function FolioInfo({ onClose, visible }) {
           <h1>
             Glenn Montepiedra's Portfolio
             <br/>
-            Browse channels to explore.
+            <div className="info__subMessage">
+              Browse channels to explore.
+            </div>
             <br/><br/><br/>
-            <text onClick={onClose}>
+            <div className="info__exit" onClick={onClose}>
               Click here to continue.
-            </text>
+            </div>
           </h1>
         </div>
         <div className="info__bottomBorder"/>

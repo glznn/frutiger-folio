@@ -27,13 +27,14 @@ reportWebVitals();
 function HasFooter() {
   const location = useLocation();
   const index = findChannelIndex(location.pathname);
+  if (index === -1) return null;
   if (location.pathname === '/' || location.pathname === '/contact') return null;
   return <BottomChannel buttonText={channelData[index].buttonText} link={channelData[index].buttonPath}/>;
 }
 
 function HasSwapArrow() {
   const location = useLocation();
-  if (location.pathname === '/') return null;
+  if (location.pathname === '/' || location.pathname === '/error404') return null;
   return <SwapArrow />;
 }
 
