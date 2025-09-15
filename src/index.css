@@ -10,7 +10,11 @@
   /* view-transition-name: root; */
 }
 
-@media (max-width: 600px), (max-height: 600px) {
+/*
+/   Fixes for when background does not go light for mobile versions. 
+*/
+
+@media (max-width: 600px) {
   :root {
     background-size: 47vw;
   }
@@ -18,7 +22,7 @@
 
 @media (max-width: 1024px) {
   :root {
-    background-size: 30vw;
+    background-size: 20vw;
   }
 }
 
