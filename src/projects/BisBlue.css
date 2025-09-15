@@ -7,15 +7,29 @@
     overflow: hidden;
 }
 
+@media (max-width: 800px) {
+    .BisBlue {
+        overflow-y: auto;
+    }
+}
+
 @media (max-width: 400px) {
     .BisBlue {
         border-top-left-radius: 70px;
         border-top-right-radius: 70px;
     }
 }
+
 .bb__layout {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+    .bb__layout {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .bb__image {
@@ -28,6 +42,12 @@
     height: calc(80vh - 7px);
     width:50vw;
     object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .bb__image img {
+        width: auto;
+    }
 }
 
 .bb__content {

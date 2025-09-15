@@ -11,6 +11,7 @@
   position: relative;
   text-align: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   cursor:grab;
 
   /* border:rgb(52, 120, 255) 3px solid; */
@@ -83,6 +84,14 @@
     inset 4px 4px 8px rgba(255, 255, 255, 0.6),
     0 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+
+@media (min-width: 2200px) {
+  .home__channel {
+    max-width: 550px;
+    max-height: calc(550px / 1.667);
+
+  }
 }
 
 .home__channel:hover {
