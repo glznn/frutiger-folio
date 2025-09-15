@@ -7,6 +7,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 400px) {
+    .BisBlue {
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+}
 .bb__layout {
     display: flex;
     justify-content: space-evenly;

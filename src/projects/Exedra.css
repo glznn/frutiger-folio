@@ -7,6 +7,13 @@
     overflow: hidden;
 }
 
+@media (max-width: 400px) {
+    .Exedra {
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+}
+
 .ex__layout {
     display: flex;
     justify-content: space-evenly;

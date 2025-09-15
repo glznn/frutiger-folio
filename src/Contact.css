@@ -9,6 +9,13 @@
     overflow: hidden;
 }
 
+@media (max-width: 400px) {
+    .Contact {
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+}
+
 .contact__layout {
     position: absolute;
     z-index: 0;

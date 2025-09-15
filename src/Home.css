@@ -232,6 +232,25 @@
   left: 0%;
 }
 
+@media (max-width: 400px) {
+
+  .home__leftBlock {
+    min-width: 200px;
+  }
+
+  .home__rightBlock {
+    min-width: 200px;
+  }
+
+  .home__rightPocket {
+    min-width: 100px;
+  }
+
+  .home__leftPocket {
+    min-width: 100px;
+  }
+}
+
 .home__rightIcon, .home__leftIcon {
   font-family: 'spectral';
   position:sticky;
@@ -302,8 +321,8 @@
   left: 0px;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 100vw;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
 }
 
 .info__content {
@@ -377,6 +396,12 @@
   }
 }
 
+@media (max-width: 400px) {
+  .info__message h1 {
+    font-size: 1.4rem;
+  }
+}
+
 .info__subMessage {
     letter-spacing: -1.8px;
     font-size: 1.75rem;
@@ -428,8 +453,8 @@
   background: rgba(0, 0, 0, 0.626);
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
 }
 
 #contact__background {

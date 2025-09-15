@@ -61,3 +61,12 @@
     right: 2.5px;
 }
 
+@media (max-width: 400px) {
+    .swap__left, .swap__leftShadow {
+        margin-left: -10px;
+    }
+
+    .swap__right, .swap__rightShadow {
+        margin-right: -10px;
+    }
+}

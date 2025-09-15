@@ -17,13 +17,15 @@ function Credits() {
           >
             <div className="credits__header">
               <div className="credits__title">  Credits   </div>
-              Created using‎  ‎
-              <a href="https://react.dev/"
-              target='_blank'
-              rel="noreferrer"
-              >
-              React.js</a>
-              <br/>
+              <div className="credits__subTitle">
+                Created using‎  ‎
+                <a href="https://react.dev/"
+                target='_blank'
+                rel="noreferrer"
+                >
+                React.js</a>
+                <br/>
+              </div>
             </div>
             <div className="credits__layout">
               <div className="credits__packages">
