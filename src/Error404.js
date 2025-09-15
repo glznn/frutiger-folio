@@ -12,7 +12,7 @@ function Error404() {
             <div className="info__topBorder"/>
             <div className="info__message">
             <h1>
-                404 — Page Not Found
+                Error 404 — Page Not Found
                 <br/>
                 <div className="info__subMessage">The page you requested does not exist.</div>
                 <br/><br/><br/>

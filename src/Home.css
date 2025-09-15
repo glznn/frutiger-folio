@@ -7,6 +7,7 @@
 
 .Home {
   display: flex;
+  justify-content: center;
   position: relative;
   text-align: center;
   padding-top: 2rem;
@@ -16,6 +17,12 @@
   /* border-image: linear-gradient(to right, rgb(215, 255, 113), rgb(0, 255, 119), rgb(255, 0, 230)) 1; */
 }
 
+@media (max-width: 400px) {
+  .Home {
+    overflow: auto;
+  }
+}
+
 .Home h1 { 
   font-family: 'two-weekend-bold';
   z-index: 0;
@@ -23,10 +30,7 @@
 }
 
 .home__channels {
-  position: absolute;
   display: grid;
-  left: 50%;
-  transform: translateX(-52%);
   width: max-content;
   /* height: max-content; */
   flex-wrap: nowrap;
@@ -34,6 +38,7 @@
   list-style: none;
   gap: 0.5rem;
   margin: 0 auto;
+  padding-left: 0px;
 
   overflow: hidden;
 }
@@ -240,6 +245,7 @@
 
   .home__rightBlock {
     min-width: 200px;
+    right: -4%;
   }
 
   .home__rightPocket {
