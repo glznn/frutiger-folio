@@ -615,7 +615,7 @@
   z-index: 2;
   align-self: center;
   padding-left: 5px;
-  font-size: max(min(1vw, 28px), 8px);
+  font-size: max(min(1vw, 18px), 8px);
   width: fit-content;
 }
 
@@ -682,7 +682,7 @@
 }
 
 .contact__message h1 {
-  font-size: max(min(1vw, 28px), 12px);
+  font-size: max(min(1vw, 18px), 12px);
   padding-left: 5px;
 }
 
@@ -714,7 +714,6 @@
 }
 
 .contact__bottom {
-  margin-top: -20px;
   display: flex;
   width: 100%;
   height: 20%;
@@ -753,7 +752,7 @@
   background-image: linear-gradient(to top left, rgb(128, 128, 128), white);
 
   font-family: 'two-weekend-bold';
-  font-size: calc(0.7rem + 0.68vw);
+  font-size: max(min(1vw, 25px), 20px);
 
   color:rgb(73, 73, 73);
 
@@ -780,6 +779,32 @@
     inset 0px 0px 10px 30px rgba(35, 125, 173, 0.200);
   width:calc(calc(2rem + 20vw) * 1.1);
   height: calc(8vh * 1.1)
+}
+
+@media (min-height: 1000px) {
+  .contact__submit::before {
+    border-radius: 20px;
+  }
+
+  .contact__submit {
+    border-radius: 50px;
+  }
+
+  .contact__submit::after {
+    border-radius: 20px;
+  }
+
+  .contact__submit:hover {
+    box-shadow: 0px 0px 15px 10px rgba(159, 159, 159, 0),
+    inset 0px 0px 10px 70px rgba(35, 125, 173, 0.200);
+  }
+}
+
+@media (min-height: 800px) {
+  .contact__submit:hover {
+    box-shadow: 0px 0px 15px 10px rgba(159, 159, 159, 0),
+    inset 0px 0px 10px 70px rgba(35, 125, 173, 0.200);
+  }
 }
 
 /*
