@@ -58,7 +58,13 @@ function Home() {
                   }
                 }}
               >
-                <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>
+                {channel.status ==='inactive' && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
+                <video className="home__video" id={channel.status} src={channel.video}
+                autoPlay 
+                muted 
+                loop 
+                playsInline>
+                </video>
                 <h1 className="home__channelName">{channel.text}</h1>
               </li>
             )

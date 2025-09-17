@@ -3,6 +3,7 @@ export const channelData = [
         name:"Contact",
         text: "Contact",
         image: '/images/contact-preview.gif',
+        video:'/videos/contact-preview.mp4',
 
         path: '/contact',
         prev:'/',
@@ -14,6 +15,7 @@ export const channelData = [
         name:"Bis Blue",
         text: "",
         image: '/images/bis-blue-preview.gif',
+        video: '/videos/bis-blue-preview.mp4',
 
         path: '/bis-blue',
         prev:'/contact',
@@ -28,6 +30,7 @@ export const channelData = [
         name: "Exedra",
         text: "",
         image: '/images/exedra-preview.png',
+        video: '/videos/exedra-preview.mp4',
 
         path: '/exedra',
         prev:'/bis-blue',
@@ -42,6 +45,7 @@ export const channelData = [
         name:"Your Name Here!",
         text: "",
         image: '/images/promo-preview.gif',
+        video: '/videos/promo-preview.mp4',
 
         path: '/promo',
         prev: '/exedra',
@@ -61,7 +65,7 @@ export const channelData = [
         prev: '/promo',
         next:'/credits',
 
-        status: 'active',
+        status: 'inactive',
 
         buttonText: "Play",
         buttonPath: '/',
@@ -70,6 +74,7 @@ export const channelData = [
         name:"Credits",
         text: "",
         image: '/images/credits-preview.gif',
+        video: '/videos/credits-preview.mp4',
 
         path: '/credits',
         prev:'/game',
