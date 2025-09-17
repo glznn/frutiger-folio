@@ -99,11 +99,10 @@
 }
 
 .home__channel img {
-  display: flex;
-  position: relative;
-  width: 102%;
+  margin-left: -10px;
+  width: 115%;
   min-width: 170px;
-  height: auto;
+  height: cover;
   z-index: 0;
   opacity: 0.8;
   transition: all ease-in-out 1s;

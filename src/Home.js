@@ -58,7 +58,8 @@ function Home() {
                   }
                 }}
               >
-                {channel.status ==='inactive' && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
+                {(channel.status === 'inactive' || channel.name === 'Game')
+                 && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
                 <video className="home__video" id={channel.status} src={channel.video}
                 autoPlay 
                 muted 

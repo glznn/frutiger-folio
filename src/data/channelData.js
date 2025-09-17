@@ -65,7 +65,7 @@ export const channelData = [
         prev: '/promo',
         next:'/credits',
 
-        status: 'inactive',
+        status: 'active',
 
         buttonText: "Play",
         buttonPath: '/',
