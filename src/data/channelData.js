@@ -1,5 +1,3 @@
-import { video } from "framer-motion/client";
-
 export const channelData = [
     {
         name:"Contact",
