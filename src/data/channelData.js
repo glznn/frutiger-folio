@@ -1,3 +1,5 @@
+import { video } from "framer-motion/client";
+
 export const channelData = [
     {
         name:"Contact",
@@ -67,7 +69,7 @@ export const channelData = [
 
         status: 'active',
 
-        buttonText: "Play",
+        buttonText: "Coming Soon!",
         buttonPath: '/',
     },
     {
@@ -86,37 +88,37 @@ export const channelData = [
         buttonPath: '/',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',
     },
     {
-        image: '/images/tv-static.gif',
+        video: '/videos/tv-static.mp4',
         path: '/',
 
         status: 'inactive',

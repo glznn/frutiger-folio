@@ -58,9 +58,9 @@ function Home() {
                   }
                 }}
               >
-                {(channel.status === 'inactive' || channel.name === 'Game')
+                {(channel.name === 'Game')
                  && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
-                {(channel.status === 'active' && channel.name !== 'Game') 
+                {(channel.name !== 'Game') 
                 && <video className="home__video" id={channel.status}
                 preload='auto'
                 autoPlay 
