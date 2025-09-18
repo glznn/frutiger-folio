@@ -9,7 +9,7 @@ function Exedra() {
     <div className="Exedra">
       <div className="ex__layout">
         <div className="ex__image">
-          <img src="/images/exedra-preview.png" alt="Exedra" fetchPriority='high'/>
+          <img src="/images/exedra-preview.webp" alt="Exedra" fetchPriority='high'/>
         </div>
         <div className="ex__content">
           <h1>description</h1>

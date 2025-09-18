@@ -9,7 +9,7 @@ function BisBlue() {
     <div className="BisBlue">
       <div className="bb__layout">
         <div className="bb__image">
-          <img src="/images/bis-blue-preview.png" alt="Bis Blue"/>
+          <img src="/images/bis-blue-preview.webp" alt="Bis Blue"/>
         </div>
         <div className="bb__content">
           <img className="bb__logo" src="/images/BB_Logo.png" alt="Bis Blue Logo" fetchPriority='high'/>

@@ -59,7 +59,7 @@ export const channelData = [
     {
         name:"Game",
         text: "Game",
-        image: '/images/game-preview.webp',
+        image: '/images/game-preview (1).webp',
 
         path: '/game',
         prev: '/promo',
