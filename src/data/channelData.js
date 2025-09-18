@@ -82,8 +82,8 @@ export const channelData = [
 
         status: 'active',
 
-        buttonText: "Learn more",
-        buttonPath: '/',
+        buttonText: "Contact",
+        buttonPath: '/contact',
     },
     {
         video: '/videos/tv-static.mp4',

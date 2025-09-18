@@ -56,6 +56,7 @@ code {
   src: url('/public/fonts/twoweekendgo-bold.otf') format('opentype');
   font-weight: bolder;
   font-style: bolder;
+  font-display: swap;
 }
 
 @font-face {
@@ -63,6 +64,7 @@ code {
   src: url('/public/fonts/twoweekendgo-regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -70,6 +72,5 @@ code {
   src: url('/public/fonts/twoweekendgo-semibold.otf') format('opentype');
   font-weight: bold;
   font-style: bold;
+  font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;600;700&display=swap');
