@@ -59,7 +59,7 @@ function Home() {
                 }}
               >
                 {(channel.name === 'Game')
-                 && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
+                 && <img id={channel.status} src={channel.image} alt={channel.name} fetchPriority='high'/>}
                 {(channel.name !== 'Game') 
                 && <video className="home__video" id={channel.status}
                 preload='auto'
