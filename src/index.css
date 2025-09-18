@@ -53,7 +53,8 @@ code {
 
 @font-face {
   font-family: 'Two-Weekend-Bolder';
-  src: url('/public/fonts/twoweekendgo-bold.otf') format('opentype');
+  src: url('/public/fonts/twoweekendgo-bold.woff2') format('woff2'), 
+    url('/public/fonts/twoweekendgo-bold.woff') format('woff');
   font-weight: bolder;
   font-style: bolder;
   font-display: swap;
@@ -61,7 +62,8 @@ code {
 
 @font-face {
   font-family: 'Two-Weekend';
-  src: url('/public/fonts/twoweekendgo-regular.otf') format('opentype');
+  src: url('/public/fonts/twoweekendgo-regular.woff2') format('woff2');
+  src: url('/public/fonts/twoweekendgo-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -69,7 +71,8 @@ code {
 
 @font-face {
   font-family: 'Two-Weekend-Bold';
-  src: url('/public/fonts/twoweekendgo-semibold.otf') format('opentype');
+  src: url('/public/fonts/twoweekendgo-semibold.woff2') format('woff2'), 
+    url('/public/fonts/twoweekendgo-semibold.woff') format('woff');
   font-weight: bold;
   font-style: bold;
   font-display: swap;
