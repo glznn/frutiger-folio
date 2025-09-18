@@ -309,6 +309,17 @@
       width: 70px;
       margin-top: 1.5px;
   }
+
+  .home__mail, .home__info {
+    padding-top: 0px;
+  }
+
+  .home__rightIcon:after, .home__leftIcon:after {
+    top: 12px;
+    width: calc(100% - 50px);
+    height: 40%;
+  }
+
 }
 
 /*
