@@ -60,12 +60,15 @@ function Home() {
               >
                 {(channel.status === 'inactive' || channel.name === 'Game')
                  && <img id={channel.status} src={channel.image} alt={channel.name} loading="lazy"/>}
-                <video className="home__video" id={channel.status} src={channel.video}
+                {(channel.status === 'active' && channel.name !== 'Game') 
+                && <video className="home__video" id={channel.status}
+                preload='auto'
                 autoPlay 
                 muted 
                 loop 
                 playsInline>
-                </video>
+                  <source src={channel.video} type="video/mp4" />
+                </video>}
                 <h1 className="home__channelName">{channel.text}</h1>
               </li>
             )
