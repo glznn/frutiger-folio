@@ -62,6 +62,7 @@ function Home() {
                  && <img id={channel.status} src={channel.image} alt={channel.name} fetchPriority='high'/>}
                 {(channel.name !== 'Game') 
                 && <video className="home__video" id={channel.status}
+                fetchPriority='high'
                 preload='auto'
                 autoPlay 
                 muted 
