@@ -18,6 +18,7 @@ export const TransitionHandler = ( {children} ) => {
         if (channelData[channelDataIndex].next === to.pathname) return 'slide-left';
         if (channelData[channelDataIndex].prev === to.pathname) return 'slide-right';
         if (to.pathname === '/contact' && from.pathname === '/promo') return 'slide-right';
+        if (to.pathname === '/contact' && from.pathname === '/credits') return 'slide-right';
         return 'none';
     }
 
