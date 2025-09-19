@@ -143,7 +143,8 @@ function Credits() {
               Ninendo Wii Menu</a>
               <br/>
               
-              (This is a personal project and is not affiliated with Nintendo in any way.) <br/>
+              (This is a personal project and is not affiliated with Nintendo in any way.) <br/><br/>
+              <span style={{fontStyle:"italic"}}>* Unless otherwise credited, all components were developed using JavaScript and HTML/CSS.</span>
             </div>
           </motion.div>
         </div>
