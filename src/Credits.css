@@ -17,6 +17,12 @@
 
 @media (max-width: 400px) {
     .Credits {
+        margin-left: 8px;
+        margin-right: -2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 82%;
         border-top-left-radius: 70px;
         border-top-right-radius: 70px;
     }
@@ -28,7 +34,6 @@
         border-top-right-radius: 300px;
     }
 }
-
 
 .credits__content {
     background-color: rgba(0, 0, 0, 0.95);

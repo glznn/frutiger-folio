@@ -1,7 +1,6 @@
 .Game {
     display: flex;
     font-family: 'two-weekend-bold';
-    font-size: 600px;
 }
 
 .game__g {
@@ -10,11 +9,12 @@
     top: 50%;
     transform: translateX(-50%) translateY(-55%);
     text-shadow: 8px 2px 0px gray;
+    font-size: calc(1rem + 40vw);
 
 }
 
 .game__m {
-    font-size: 80px;
+    font-size: calc(4vw);
     position: absolute;
     left: 50%;
     top: 50%;

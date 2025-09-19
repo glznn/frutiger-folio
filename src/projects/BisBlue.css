@@ -1,20 +1,22 @@
 .BisBlue {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     height: 79.4%;
     background-color: rgba(0, 0, 0, 0.95);
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     box-shadow: 0 0 0 8px rgb(166, 166, 166);
-    overflow: hidden;
-}
-
-@media (max-width: 800px) {
-    .BisBlue {
-        overflow-y: auto;
-    }
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @media (max-width: 400px) {
     .BisBlue {
+        margin-left: 8px;
+        margin-right: -2px;
+        height: 82%;
         border-top-left-radius: 70px;
         border-top-right-radius: 70px;
     }
@@ -28,58 +30,118 @@
 }
 
 .bb__layout {
+    margin: auto auto;
+    flex-direction: column;
     display: flex;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 800px) {
-    .bb__layout {
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-.bb__image {
     position: relative;
-    top: 0px;
-    padding-top: 2px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
-.bb__image img {
-    height: calc(80vh - 7px);
-    width:50vw;
-    object-fit: cover;
-}
-
-@media (max-width: 800px) {
-    .bb__image img {
-        width: auto;
+@media (min-width: 800px) {
+    .bb__layout {
+        width: 100%;
+        height: 100%;
     }
 }
 
 .bb__content {
-    position: relative;
-    top: 0px;
-    right: 5%;
-    color:white;
-    text-align: right;
-    width: 30vw;
-    padding-left: 10vw;
-    height: calc(80vh - 5px);
-    outline: solid red 2px;
-    align-content: center;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     font-size: 15px;
+    color: white;
     font-family: 'spectral';
 }
 
-.bb__content h1 {
-    font-weight: 100;
-    letter-spacing: -1px;
+@media (min-width: 800px) {
+    .bb__content {
+        justify-content: space-evenly;
+        margin-bottom: 1%;
+        margin-left: 10%;
+        width: 30%; 
+        height: 100%;
+        align-self: flex-start;
+    }
 }
 
 .bb__logo {
-    margin-top: -10rem;
-    margin-bottom: -8rem;
-    padding-right: 2rem;
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: -140px;
     width: 400px;
+}
+
+@media (min-width: 800px) {
+    .bb__logo {
+        top: 0px;
+        min-width: 400px;
+        width: 20vw;
+        max-width: 1000px;
+    }
+}
+
+.bb__desc {
+    height: fit-content;
+    width: 90%;
+
+    font-weight: 100;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .bb__desc {
+        font-size: max(1rem, 1vw);
+    }
+}
+
+.bb__videoContainer {
+    display: inline-block;
+}
+
+@media (min-width: 800px) {
+    .bb__videoContainer {
+        position: absolute;
+        left: 0px;
+        width: 100vw;
+        height: 75vh;
+    }
+}
+
+.bb__video {
+    display: block;
+    position: relative;
+    padding-top: 2px;
+    width: 100%;
+    height:auto;
+    object-fit:contain;
+}
+
+@media (min-width: 800px) {
+    .bb__video {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 65vw;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.bb__tools {
+    width: 70%;
+    text-align: center;
+    font-size: min(12px, 3vw); 
+}
+
+@media (min-width: 800px) {
+    .bb__tools {
+        font-size: max(1vw, 1rem);
+    }
 }

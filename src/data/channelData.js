@@ -67,7 +67,7 @@ export const channelData = [
 
         status: 'active',
 
-        buttonText: "Coming Soon!",
+        buttonText: "Stay Tuned!",
         buttonPath: '/',
     },
     {

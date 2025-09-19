@@ -13,6 +13,9 @@
 
 @media (max-width: 400px) {
     .Promo {
+        margin-left: 8px;
+        margin-right: -2px;
+        height: 82%;
         border-top-left-radius: 70px;
         border-top-right-radius: 70px;
     }
