@@ -113,8 +113,35 @@ export function ContactMe({ onClose }) {
 
   const currentPath = window.location.pathname;
 
+  // const onSubmit = async (event) => {
+  //   event.preventDefault();
+  //    Swal.fire({
+  //     title: "Message sent!",
+  //     text: "Thank you for your inquiry.",
+  //     icon: "success",
+  //     confirmButtonText: "Yay!",
+  //     preConfirm: () => {
+  //       onClose();
+  //       }
+  //   }); 
+  // }
+
+  const [result, setResult] = React.useState("");
+  
   const onSubmit = async (event) => {
-    event.preventDefault();
+   event.preventDefault();
+   setResult("Sending....");
+   const formData = new FormData(event.target);
+
+   formData.append("access_key", "d1dd155a-fc46-414e-aed3-09fe379482cc");
+
+   const response = await fetch("https://api.web3forms.com/submit", {
+     method: "POST",
+     body: formData
+   });
+
+   const data = await response.json();
+    if (true) {
      Swal.fire({
       title: "Message sent!",
       text: "Thank you for your inquiry.",
@@ -124,39 +151,12 @@ export function ContactMe({ onClose }) {
         onClose();
         }
     }); 
-  }
-
-  // const [result, setResult] = React.useState("");
-  
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   setResult("Sending....");
-  //   const formData = new FormData(event.target);
-
-  //   formData.append("access_key", "9a58a39a-0062-495d-aa79-23c4d35adf73");
-
-  //   const response = await fetch("https://api.web3forms.com/submit", {
-  //     method: "POST",
-  //     body: formData
-  //   });
-
-  //   const data = await response.json();
-  //   /* change */ 
-  //   if (true) {
-  //     Swal.fire({
-  //       title: "Message sent!",
-  //       text: "Thank you for your inquiry.",
-  //       icon: "success",
-  //       confirmButtonText: "Cool!",
-  //       preConfirm: () => {
-  //         onClose();
-  //       }
-  //     });
-  //   } else {
-  //     console.log("Error", data);
-  //     setResult(data.message);
-  //   }
-  // };
+     } 
+    else {
+       console.log("Error", data);
+       setResult(data.message);
+     }
+   };
 
 
 /*
