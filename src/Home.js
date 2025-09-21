@@ -126,7 +126,7 @@ export function ContactMe({ onClose }) {
   //   }); 
   // }
 
-  const [result, setResult] = React.useState("");
+  // const [result, setResult] = React.useState("");
   
   const onSubmit = async (event) => {
    event.preventDefault();
