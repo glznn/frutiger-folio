@@ -133,7 +133,7 @@ export function ContactMe({ onClose }) {
    setResult("Sending....");
    const formData = new FormData(event.target);
 
-   formData.append("access_key", "d1dd155a-fc46-414e-aed3-09fe379482cc");
+   formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY);
 
    const response = await fetch("https://api.web3forms.com/submit", {
      method: "POST",
